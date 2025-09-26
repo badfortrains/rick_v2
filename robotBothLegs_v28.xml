@@ -1,0 +1,122 @@
+<?xml version="1.0" ?>
+<mujoco model="robotBothLegs_v28">
+  <default>
+    <mesh scale="0.001 0.001 0.001"/>
+    <geom rgba="0.5 0.7 1.0 1"/>
+    <joint damping="1"/>
+    <position kp="14"/>
+  </default>
+  <asset>
+    <mesh file="meshes/body_1.stl" name="body_1_mesh"/>
+    <mesh file="meshes/robot_v5(Mirror)_1+servo_v1(Mirror)_1.stl" name="robot_v5(Mirror)_1+servo_v1(Mirror)_1_mesh"/>
+    <mesh file="meshes/robot_v5(Mirror)_1+Motor_mount_v5(Mirror)_1+mount(Mirror)_1.stl" name="robot_v5(Mirror)_1+Motor_mount_v5(Mirror)_1+mount(Mirror)_1_mesh"/>
+    <mesh file="meshes/robot_v5(Mirror)_1+servo_v1(Mirror)_2.stl" name="robot_v5(Mirror)_1+servo_v1(Mirror)_2_mesh"/>
+    <mesh file="meshes/robot_v5(Mirror)_1+Motor_mount_v5(Mirror)_2+mount(Mirror)_1.stl" name="robot_v5(Mirror)_1+Motor_mount_v5(Mirror)_2+mount(Mirror)_1_mesh"/>
+    <mesh file="meshes/robot_v5(Mirror)_1+servo_v1(Mirror)_3.stl" name="robot_v5(Mirror)_1+servo_v1(Mirror)_3_mesh"/>
+    <mesh file="meshes/robot_v5(Mirror)_1+LegMount_v6(Mirror)_1.stl" name="robot_v5(Mirror)_1+LegMount_v6(Mirror)_1_mesh"/>
+    <mesh file="meshes/robot_v5(Mirror)_1+servo_v1(Mirror)_4.stl" name="robot_v5(Mirror)_1+servo_v1(Mirror)_4_mesh"/>
+    <mesh file="meshes/robot_v5(Mirror)_1+lowerLeg_v3(Mirror)_1.stl" name="robot_v5(Mirror)_1+lowerLeg_v3(Mirror)_1_mesh"/>
+    <mesh file="meshes/robot_v5(Mirror)_1+servo_v1(Mirror)_5.stl" name="robot_v5(Mirror)_1+servo_v1(Mirror)_5_mesh"/>
+    <mesh file="meshes/robot_v5(Mirror)_1+foot_v6(Mirror)_1.stl" name="robot_v5(Mirror)_1+foot_v6(Mirror)_1_mesh"/>
+    <mesh file="meshes/left-leg_v10_1+servo_v2_1.stl" name="left-leg_v10_1+servo_v2_1_mesh"/>
+    <mesh file="meshes/left-leg_v10_1+Motor_mount_v7_1+mount_1.stl" name="left-leg_v10_1+Motor_mount_v7_1+mount_1_mesh"/>
+    <mesh file="meshes/left-leg_v10_1+servo_v2_2.stl" name="left-leg_v10_1+servo_v2_2_mesh"/>
+    <mesh file="meshes/left-leg_v10_1+Motor_mount_v7_2+mount_1.stl" name="left-leg_v10_1+Motor_mount_v7_2+mount_1_mesh"/>
+    <mesh file="meshes/left-leg_v10_1+servo_v2_3.stl" name="left-leg_v10_1+servo_v2_3_mesh"/>
+    <mesh file="meshes/left-leg_v10_1+LegMount_v7_1.stl" name="left-leg_v10_1+LegMount_v7_1_mesh"/>
+    <mesh file="meshes/left-leg_v10_1+servo_v2_4.stl" name="left-leg_v10_1+servo_v2_4_mesh"/>
+    <mesh file="meshes/left-leg_v10_1+lowerLeg_v4_1.stl" name="left-leg_v10_1+lowerLeg_v4_1_mesh"/>
+    <mesh file="meshes/left-leg_v10_1+servo_v2_5.stl" name="left-leg_v10_1+servo_v2_5_mesh"/>
+    <mesh file="meshes/left-leg_v10_1+foot_v7_1.stl" name="left-leg_v10_1+foot_v7_1_mesh"/>
+  </asset>
+  <actuator>
+    <position name="robot_v5(Mirror)_1+Motor_mount_v5(Mirror)_1+mount(Mirror)_1Revolute_1" joint="robot_v5(Mirror)_1+Motor_mount_v5(Mirror)_1+mount(Mirror)_1Revolute_1"/>
+    <position name="robot_v5(Mirror)_1+Motor_mount_v5(Mirror)_2+mount(Mirror)_1Revolute_2" joint="robot_v5(Mirror)_1+Motor_mount_v5(Mirror)_2+mount(Mirror)_1Revolute_2"/>
+    <position name="robot_v5(Mirror)_1+LegMount_v6(Mirror)_1Revolute_3" joint="robot_v5(Mirror)_1+LegMount_v6(Mirror)_1Revolute_3"/>
+    <position name="robot_v5(Mirror)_1+lowerLeg_v3(Mirror)_1Revolute_4" joint="robot_v5(Mirror)_1+lowerLeg_v3(Mirror)_1Revolute_4"/>
+    <position name="robot_v5(Mirror)_1+foot_v6(Mirror)_1Revolute_5" joint="robot_v5(Mirror)_1+foot_v6(Mirror)_1Revolute_5"/>
+    <position name="left-leg_v10_1+Motor_mount_v7_1+mount_1Revolute_1" joint="left-leg_v10_1+Motor_mount_v7_1+mount_1Revolute_1"/>
+    <position name="left-leg_v10_1+Motor_mount_v7_2+mount_1Revolute_3" joint="left-leg_v10_1+Motor_mount_v7_2+mount_1Revolute_3"/>
+    <position name="left-leg_v10_1+LegMount_v7_1Revolute_5" joint="left-leg_v10_1+LegMount_v7_1Revolute_5"/>
+    <position name="left-leg_v10_1+lowerLeg_v4_1Revolute_7" joint="left-leg_v10_1+lowerLeg_v4_1Revolute_7"/>
+    <position name="left-leg_v10_1+foot_v7_1Revolute_9" joint="left-leg_v10_1+foot_v7_1Revolute_9"/>
+  </actuator>
+  <worldbody>
+    <geom type="plane" size="1 1 0.1" rgba="0.9 0.9 0.9 1"/>
+    <light mode="targetbodycom" target="body" diffuse=".8 .8 .8" specular="0.3 0.3 0.3" pos="0 -6 4" cutoff="30"/>
+    <body name="body" pos="0 0 .17355">
+      <freejoint name="root"/>
+      <geom density="150" type="mesh" mesh="body_1_mesh"/>
+      <body name="robot_v5(Mirror)_1+servo_v1(Mirror)_1">
+        <geom type="mesh" mesh="robot_v5(Mirror)_1+servo_v1(Mirror)_1_mesh"/>
+        <body name="robot_v5(Mirror)_1+Motor_mount_v5(Mirror)_1+mount(Mirror)_1">
+          <joint axis="0 0 1" name="robot_v5(Mirror)_1+Motor_mount_v5(Mirror)_1+mount(Mirror)_1Revolute_1" type="hinge" pos="0.0500 -0.0275 -0.0320"/>
+          <geom type="mesh" mesh="robot_v5(Mirror)_1+Motor_mount_v5(Mirror)_1+mount(Mirror)_1_mesh"/>
+          <body name="robot_v5(Mirror)_1+servo_v1(Mirror)_2">
+            <geom type="mesh" mesh="robot_v5(Mirror)_1+servo_v1(Mirror)_2_mesh"/>
+            <body name="robot_v5(Mirror)_1+Motor_mount_v5(Mirror)_2+mount(Mirror)_1">
+              <joint axis="0 1 0" name="robot_v5(Mirror)_1+Motor_mount_v5(Mirror)_2+mount(Mirror)_1Revolute_2" type="hinge" pos="0.0540 -0.0071 -0.0393"/>
+              <geom type="mesh" mesh="robot_v5(Mirror)_1+Motor_mount_v5(Mirror)_2+mount(Mirror)_1_mesh"/>
+              <body name="robot_v5(Mirror)_1+servo_v1(Mirror)_3">
+                <geom type="mesh" mesh="robot_v5(Mirror)_1+servo_v1(Mirror)_3_mesh"/>
+                <body name="robot_v5(Mirror)_1+LegMount_v6(Mirror)_1">
+                  <joint axis="1 0 0" name="robot_v5(Mirror)_1+LegMount_v6(Mirror)_1Revolute_3" type="hinge" pos="0.0744 0.0002 -0.0512"/>
+                  <geom type="mesh" mesh="robot_v5(Mirror)_1+LegMount_v6(Mirror)_1_mesh"/>
+                  <body name="robot_v5(Mirror)_1+servo_v1(Mirror)_4">
+                    <geom type="mesh" mesh="robot_v5(Mirror)_1+servo_v1(Mirror)_4_mesh"/>
+                    <body name="robot_v5(Mirror)_1+lowerLeg_v3(Mirror)_1">
+                      <joint axis="1 0 0" name="robot_v5(Mirror)_1+lowerLeg_v3(Mirror)_1Revolute_4" type="hinge" pos="0.0885 0.0039 -0.1154"/>
+                      <geom type="mesh" mesh="robot_v5(Mirror)_1+lowerLeg_v3(Mirror)_1_mesh"/>
+                      <body name="robot_v5(Mirror)_1+servo_v1(Mirror)_5">
+                        <geom type="mesh" mesh="robot_v5(Mirror)_1+servo_v1(Mirror)_5_mesh"/>
+                        <body name="robot_v5(Mirror)_1+foot_v6(Mirror)_1">
+                          <joint axis="1 0 0" name="robot_v5(Mirror)_1+foot_v6(Mirror)_1Revolute_5" type="hinge" pos="0.1026 0.0077 -0.1496"/>
+                          <geom type="mesh" mesh="robot_v5(Mirror)_1+foot_v6(Mirror)_1_mesh"/>
+                        </body>
+                      </body>
+                    </body>
+                  </body>
+                </body>
+              </body>
+            </body>
+          </body>
+        </body>
+      </body>
+      <body name="left-leg_v10_1+servo_v2_1">
+        <geom type="mesh" mesh="left-leg_v10_1+servo_v2_1_mesh"/>
+        <body name="left-leg_v10_1+Motor_mount_v7_1+mount_1">
+          <joint axis="0 0 1" name="left-leg_v10_1+Motor_mount_v7_1+mount_1Revolute_1" type="hinge" pos="-0.0500 -0.0275 -0.0320"/>
+          <geom type="mesh" mesh="left-leg_v10_1+Motor_mount_v7_1+mount_1_mesh"/>
+          <body name="left-leg_v10_1+servo_v2_2">
+            <geom type="mesh" mesh="left-leg_v10_1+servo_v2_2_mesh"/>
+            <body name="left-leg_v10_1+Motor_mount_v7_2+mount_1">
+              <joint axis="0 1 0" name="left-leg_v10_1+Motor_mount_v7_2+mount_1Revolute_3" type="hinge" pos="-0.0540 -0.0071 -0.0393"/>
+              <geom type="mesh" mesh="left-leg_v10_1+Motor_mount_v7_2+mount_1_mesh"/>
+              <body name="left-leg_v10_1+servo_v2_3">
+                <geom type="mesh" mesh="left-leg_v10_1+servo_v2_3_mesh"/>
+                <body name="left-leg_v10_1+LegMount_v7_1">
+                  <joint axis="1 0 0" name="left-leg_v10_1+LegMount_v7_1Revolute_5" type="hinge" pos="-0.0744 0.0002 -0.0512"/>
+                  <geom type="mesh" mesh="left-leg_v10_1+LegMount_v7_1_mesh"/>
+                  <body name="left-leg_v10_1+servo_v2_4">
+                    <geom type="mesh" mesh="left-leg_v10_1+servo_v2_4_mesh"/>
+                    <body name="left-leg_v10_1+lowerLeg_v4_1">
+                      <joint axis="1 0 0" name="left-leg_v10_1+lowerLeg_v4_1Revolute_7" type="hinge" pos="-0.0885 0.0039 -0.1154"/>
+                      <geom type="mesh" mesh="left-leg_v10_1+lowerLeg_v4_1_mesh"/>
+                      <body name="left-leg_v10_1+servo_v2_5">
+                        <geom type="mesh" mesh="left-leg_v10_1+servo_v2_5_mesh"/>
+                        <body name="left-leg_v10_1+foot_v7_1">
+                          <joint axis="1 0 0" name="left-leg_v10_1+foot_v7_1Revolute_9" type="hinge" pos="-0.1026 0.0077 -0.1496"/>
+                          <geom type="mesh" mesh="left-leg_v10_1+foot_v7_1_mesh"/>
+                        </body>
+                      </body>
+                    </body>
+                  </body>
+                </body>
+              </body>
+            </body>
+          </body>
+        </body>
+      </body>
+    </body>
+  </worldbody>
+</mujoco>
