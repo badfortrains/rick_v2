@@ -46,7 +46,7 @@
     <light mode="targetbodycom" target="body" diffuse=".8 .8 .8" specular="0.3 0.3 0.3" pos="0 -6 4" cutoff="30"/>
     <body name="body" pos="0 0 .17355">
       <freejoint name="root"/>
-      <geom density="150" type="mesh" mesh="body_1_mesh"/>
+      <geom density="200" type="mesh" mesh="body_1_mesh"/>
       <body name="robot_v5(Mirror)_1+servo_v1(Mirror)_1">
         <geom type="mesh" mesh="robot_v5(Mirror)_1+servo_v1(Mirror)_1_mesh"/>
         <body name="robot_v5(Mirror)_1+Motor_mount_v5(Mirror)_1+mount(Mirror)_1">

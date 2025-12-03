@@ -1,0 +1,81 @@
+<?xml version="1.0" ?>
+<mujoco model="assemblyDerived_v7">
+  <default>
+    <mesh scale="0.001 0.001 0.001"/>
+    <geom rgba="0.5 0.7 1.0 1"/>
+    <position kp="0.2"/>
+  </default>
+  <asset>
+    <mesh file="meshes/derivedBody_v1_1.stl" name="derivedBody_v1_1_mesh"/>
+    <mesh file="meshes/servo_v9_1.stl" name="servo_v9_1_mesh"/>
+    <mesh file="meshes/derivedLeg_v1_1.stl" name="derivedLeg_v1_1_mesh"/>
+    <mesh file="meshes/servo_v9_3.stl" name="servo_v9_3_mesh"/>
+    <mesh file="meshes/derivedLeg_v1_2.stl" name="derivedLeg_v1_2_mesh"/>
+    <mesh file="meshes/servo_v9_5.stl" name="servo_v9_5_mesh"/>
+    <mesh file="meshes/derivedFoot_v2_1.stl" name="derivedFoot_v2_1_mesh"/>
+    <mesh file="meshes/servo_v9_2.stl" name="servo_v9_2_mesh"/>
+    <mesh file="meshes/derivedLeg_v1(Mirror)_1.stl" name="derivedLeg_v1(Mirror)_1_mesh"/>
+    <mesh file="meshes/servo_v9_4.stl" name="servo_v9_4_mesh"/>
+    <mesh file="meshes/derivedLeg_v1(Mirror)_2.stl" name="derivedLeg_v1(Mirror)_2_mesh"/>
+    <mesh file="meshes/servo_v9_6.stl" name="servo_v9_6_mesh"/>
+    <mesh file="meshes/derivedFoot_v2(Mirror)_1.stl" name="derivedFoot_v2(Mirror)_1_mesh"/>
+  </asset>
+  <actuator>
+    <position name="derivedLeg_v1_1Revolute_3" joint="derivedLeg_v1_1Revolute_3"/>
+    <position name="derivedLeg_v1_2Revolute_7" joint="derivedLeg_v1_2Revolute_7"/>
+    <position name="derivedFoot_v2_1Revolute_11" joint="derivedFoot_v2_1Revolute_11"/>
+    <position name="derivedLeg_v1(Mirror)_1Revolute_4" joint="derivedLeg_v1(Mirror)_1Revolute_4"/>
+    <position name="derivedLeg_v1(Mirror)_2Revolute_8" joint="derivedLeg_v1(Mirror)_2Revolute_8"/>
+    <position name="derivedFoot_v2(Mirror)_1Revolute_12" joint="derivedFoot_v2(Mirror)_1Revolute_12"/>
+  </actuator>
+  <worldbody>
+    <geom type="plane" size="1 1 0.1" rgba="0.9 0.9 0.9 1"/>
+    <light mode="targetbodycom" target="body" diffuse=".8 .8 .8" specular="0.3 0.3 0.3" pos="0 -6 4" cutoff="30"/>
+    <body name="body" pos="0 0 0.2344">
+      <freejoint name="root"/>
+      <geom type="mesh" mesh="derivedBody_v1_1_mesh"/>
+      <body name="servo_v9_1">
+        <geom type="mesh" mesh="servo_v9_1_mesh"/>
+        <body name="derivedLeg_v1_1">
+          <joint axis="1 0 0" name="derivedLeg_v1_1Revolute_3" type="hinge" pos="-0.0399 0.0043 -0.0744"/>
+          <geom type="mesh" mesh="derivedLeg_v1_1_mesh"/>
+          <body name="servo_v9_3">
+            <geom type="mesh" mesh="servo_v9_3_mesh"/>
+            <body name="derivedLeg_v1_2">
+              <joint axis="1 0 0" name="derivedLeg_v1_2Revolute_7" type="hinge" pos="-0.0399 0.0043 -0.1444"/>
+              <geom type="mesh" mesh="derivedLeg_v1_2_mesh"/>
+              <body name="servo_v9_5">
+                <geom type="mesh" mesh="servo_v9_5_mesh"/>
+                <body name="derivedFoot_v2_1">
+                  <joint axis="1 0 0" name="derivedFoot_v2_1Revolute_11" type="hinge" pos="-0.0399 0.0043 -0.2144"/>
+                  <geom type="mesh" mesh="derivedFoot_v2_1_mesh"/>
+                </body>
+              </body>
+            </body>
+          </body>
+        </body>
+      </body>
+      <body name="servo_v9_2">
+        <geom type="mesh" mesh="servo_v9_2_mesh"/>
+        <body name="derivedLeg_v1(Mirror)_1">
+          <joint axis="1 0 0" name="derivedLeg_v1(Mirror)_1Revolute_4" type="hinge" pos="0.0399 0.0043 -0.0744"/>
+          <geom type="mesh" mesh="derivedLeg_v1(Mirror)_1_mesh"/>
+          <body name="servo_v9_4">
+            <geom type="mesh" mesh="servo_v9_4_mesh"/>
+            <body name="derivedLeg_v1(Mirror)_2">
+              <joint axis="1 0 0" name="derivedLeg_v1(Mirror)_2Revolute_8" type="hinge" pos="0.0399 0.0043 -0.1444"/>
+              <geom type="mesh" mesh="derivedLeg_v1(Mirror)_2_mesh"/>
+              <body name="servo_v9_6">
+                <geom type="mesh" mesh="servo_v9_6_mesh"/>
+                <body name="derivedFoot_v2(Mirror)_1">
+                  <joint axis="1 0 0" name="derivedFoot_v2(Mirror)_1Revolute_12" type="hinge" pos="0.0399 0.0043 -0.2144"/>
+                  <geom type="mesh" mesh="derivedFoot_v2(Mirror)_1_mesh"/>
+                </body>
+              </body>
+            </body>
+          </body>
+        </body>
+      </body>
+    </body>
+  </worldbody>
+</mujoco>

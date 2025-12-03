@@ -1,0 +1,21 @@
+<?xml version="1.0" ?>
+<mujoco model="FullAssembly_v8">
+  <default>
+    <mesh scale="0.001 0.001 0.001"/>
+    <geom rgba="0.5 0.7 1.0 1"/>
+    <joint damping="1"/>
+    <position kp="14"/>
+  </default>
+  <asset>
+    <mesh file="meshes/body_v6_1.stl" name="body_v6_1_mesh"/>
+  </asset>
+  <actuator/>
+  <worldbody>
+    <geom type="plane" size="1 1 0.1" rgba="0.9 0.9 0.9 1"/>
+    <light mode="targetbodycom" target="body" diffuse=".8 .8 .8" specular="0.3 0.3 0.3" pos="0 -6 4" cutoff="30"/>
+    <body name="body" pos="0 0 .17355">
+      <freejoint name="root"/>
+      <geom type="mesh" mesh="body_v6_1_mesh"/>
+    </body>
+  </worldbody>
+</mujoco>
