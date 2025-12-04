@@ -1,13 +1,14 @@
 <?xml version="1.0" ?>
 <mujoco model="assemblyDerived_v8">
+  <compiler angle="radian"/>
   <default>
     <mesh scale="0.001 0.001 0.001"/>
-    <geom rgba="0.5 0.7 1.0 1"/>
+    <geom rgba="0.5 0.7 1.0 1" contype="0" conaffinity="0"/>
     <joint damping="0.005"/>
-    <position kp="0.08"/>
+    <position kp="0.3"/>
   </default>
   <asset>
-    <mesh file="meshes/derivedBody_v1_1.stl" name="derivedBody_v1_1_mesh"/>
+    <mesh file="meshes/derivedBody_v1_1.stl" name="derivedBody_v1_1_mesh" />
     <mesh file="meshes/servo_v9_1.stl" name="servo_v9_1_mesh"/>
     <mesh file="meshes/derivedLeg_v1_1.stl" name="derivedLeg_v1_1_mesh"/>
     <mesh file="meshes/servo_v9_3.stl" name="servo_v9_3_mesh"/>
@@ -30,7 +31,7 @@
     <position name="derivedFoot_v2(Mirror)_1Revolute_12" joint="derivedFoot_v2(Mirror)_1Revolute_12"/>
   </actuator>
   <worldbody>
-    <geom type="plane" size="1 1 0.1" rgba="0.9 0.9 0.9 1"/>
+    <geom type="plane" size="1 1 0.1" rgba="0.9 0.9 0.9 1" contype="1" conaffinity="1"/>
     <light mode="targetbodycom" target="body" diffuse=".8 .8 .8" specular="0.3 0.3 0.3" pos="0 -6 4" cutoff="30"/>
     <body name="body" pos="0 0 0.2344">
       <freejoint name="root"/>
@@ -38,18 +39,19 @@
       <body name="servo_v9_1">
         <geom mass="0.013" type="mesh" mesh="servo_v9_1_mesh"/>
         <body name="derivedLeg_v1_1">
-          <joint axis="1 0 0" name="derivedLeg_v1_1Revolute_3" type="hinge" pos="-0.0399 0.0043 -0.0744"/>
+          <joint axis="1 0 0" name="derivedLeg_v1_1Revolute_3" type="hinge" pos="-0.0399 0.0043 -0.0744" range="-1.5 1.5"/>
           <geom density="248" type="mesh" mesh="derivedLeg_v1_1_mesh"/>
           <body name="servo_v9_3">
             <geom mass="0.013" type="mesh" mesh="servo_v9_3_mesh"/>
             <body name="derivedLeg_v1_2">
-              <joint axis="1 0 0" name="derivedLeg_v1_2Revolute_7" type="hinge" pos="-0.0399 0.0043 -0.1444"/>
+              <joint axis="1 0 0" name="derivedLeg_v1_2Revolute_7" type="hinge" pos="-0.0399 0.0043 -0.1444" range="-1.5 1.5"/>
               <geom density="248" type="mesh" mesh="derivedLeg_v1_2_mesh"/>
               <body name="servo_v9_5">
                 <geom mass="0.013" type="mesh" mesh="servo_v9_5_mesh"/>
                 <body name="derivedFoot_v2_1">
-                  <joint axis="1 0 0" name="derivedFoot_v2_1Revolute_11" type="hinge" pos="-0.0399 0.0043 -0.2144"/>
+                  <joint axis="1 0 0" name="derivedFoot_v2_1Revolute_11" type="hinge" pos="-0.0399 0.0043 -0.2144" range="-1.5 1.5"/>
                   <geom density="248" type="mesh" mesh="derivedFoot_v2_1_mesh"/>
+                  <geom type="box"  pos="-0.025 0.0 -0.2328" size="0.02 0.032 0.0015" rgba="1 0 0 0.5" contype="1" conaffinity="1" density="248"/>
                 </body>
               </body>
             </body>
@@ -59,18 +61,19 @@
       <body name="servo_v9_2">
         <geom mass="0.013" type="mesh" mesh="servo_v9_2_mesh"/>
         <body name="derivedLeg_v1(Mirror)_1">
-          <joint axis="1 0 0" name="derivedLeg_v1(Mirror)_1Revolute_4" type="hinge" pos="0.0399 0.0043 -0.0744"/>
+          <joint axis="1 0 0" name="derivedLeg_v1(Mirror)_1Revolute_4" type="hinge" pos="0.0399 0.0043 -0.0744" range="-1.5 1.5"/>
           <geom density="248" type="mesh" mesh="derivedLeg_v1(Mirror)_1_mesh"/>
           <body name="servo_v9_4">
             <geom mass="0.013" type="mesh" mesh="servo_v9_4_mesh"/>
             <body name="derivedLeg_v1(Mirror)_2">
-              <joint axis="1 0 0" name="derivedLeg_v1(Mirror)_2Revolute_8" type="hinge" pos="0.0399 0.0043 -0.1444"/>
+              <joint axis="1 0 0" name="derivedLeg_v1(Mirror)_2Revolute_8" type="hinge" pos="0.0399 0.0043 -0.1444" range="-1.5 1.5"/>
               <geom density="248" type="mesh" mesh="derivedLeg_v1(Mirror)_2_mesh"/>
               <body name="servo_v9_6">
                 <geom mass="0.013" type="mesh" mesh="servo_v9_6_mesh"/>
                 <body name="derivedFoot_v2(Mirror)_1">
-                  <joint axis="1 0 0" name="derivedFoot_v2(Mirror)_1Revolute_12" type="hinge" pos="0.0399 0.0043 -0.2144"/>
+                  <joint axis="1 0 0" name="derivedFoot_v2(Mirror)_1Revolute_12" type="hinge" pos="0.0399 0.0043 -0.2144" range="-1.5 1.5"/>
                   <geom density="248" type="mesh" mesh="derivedFoot_v2(Mirror)_1_mesh"/>
+                  <geom type="box" pos="0.025 0.0 -0.2328" size="0.02 0.032 0.0015" rgba="1 0 0 0.5" contype="1" conaffinity="1" density="248"/>
                 </body>
               </body>
             </body>
