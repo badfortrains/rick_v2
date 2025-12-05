@@ -81,5 +81,7 @@
         </body>
       </body>
     </body>
+
+    <camera name="track" mode="trackcom" pos="0 -3 1" xyaxes="1 0 0 0 0.2 1" target="body"/>
   </worldbody>
 </mujoco>
