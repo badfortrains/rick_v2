@@ -5,7 +5,7 @@
     <mesh scale="0.001 0.001 0.001"/>
     <geom rgba="0.5 0.7 1.0 1" contype="0" conaffinity="0"/>
     <joint damping="0.005"/>
-    <position kp="0.2"/>
+    <position kp="0.3"/>
   </default>
   <asset>
     <mesh file="meshes/derivedBody_v1_1.stl" name="derivedBody_v1_1_mesh" />
