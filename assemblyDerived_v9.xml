@@ -4,7 +4,7 @@
     <mesh scale="0.001 0.001 0.001"/>
     <geom rgba="0.5 0.7 1.0 1" contype="0" conaffinity="0"/>
     <joint damping="0.005"/>
-    <position kp="0.2" forcelimited="true" forcerange="-0.2 0.2" kv="0.02"/>
+    <position kp="0.2" forcelimited="true" forcerange="-0.2 0.2"/>
   </default>
   
   <asset>
@@ -39,10 +39,10 @@
   </sensor>
 
   <worldbody>
-    <geom name="floor" size="0 0 .05" type="plane" condim="3" rgba="0.9 0.9 0.9 1" contype="1" conaffinity="1"/>
+    <geom name="floor" size="0 0 .05" type="plane" condim="4" rgba="0.9 0.9 0.9 1" contype="1" conaffinity="1"/>
     <light mode="targetbodycom" target="body" diffuse=".8 .8 .8" specular="0.3 0.3 0.3" pos="0 -6 4" cutoff="30"/>
     
-    <body name="body" pos="0 0 0.085">
+    <body name="body" pos="0 0 0.084">
       <freejoint name="root"/>
       <site name="imu_site" pos="0 0 0.12" size="0.01" rgba="1 0 0 1"/>
       <geom density="248" type="mesh" mesh="derivedBody_v1_1_mesh"/>
@@ -62,7 +62,7 @@
                 <body name="derivedFoot_v2_1">
                   <joint axis="1 0 0" name="derivedFoot_v2_1Revolute_11" type="hinge" pos="-0.0399 0.0043 -0.0644" range="-1.57 1.57"/>
                   <geom density="248" type="mesh" mesh="derivedFoot_v2_1_mesh"/>
-                  <geom type="box"  pos="-0.025 0.0 -0.0829" size="0.02 0.032 0.0015" rgba="1 0 0 0.5" contype="1" conaffinity="1" density="248" friction="1 0.005 0.0001"/>
+                  <geom type="box"  pos="-0.025 0.0 -0.0829" size="0.02 0.032 0.0015" rgba="1 0 0 0.5" contype="1" conaffinity="1" density="248" friction="1.5 0.1 0.001" solref="0.02 1"/>
                 </body>
               </body>
             </body>
@@ -85,7 +85,7 @@
                 <body name="derivedFoot_v2(Mirror)_1">
                   <joint axis="1 0 0" name="derivedFoot_v2(Mirror)_1Revolute_12" type="hinge" pos="0.0399 0.0043 -0.0644" range="-1.57 1.57"/>
                   <geom density="248" type="mesh" mesh="derivedFoot_v2(Mirror)_1_mesh"/>
-                  <geom type="box" pos="0.025 0.0 -0.0829" size="0.02 0.032 0.0015" rgba="1 0 0 0.5" contype="1" conaffinity="1" density="248" friction="1 0.005 0.0001"/>
+                  <geom type="box" pos="0.025 0.0 -0.0829" size="0.02 0.032 0.0015" rgba="1 0 0 0.5" contype="1" conaffinity="1" density="248" friction="1.5 0.1 0.001" solref="0.02 1"/>
                 </body>
               </body>
             </body>
