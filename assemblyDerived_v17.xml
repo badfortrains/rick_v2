@@ -1,10 +1,12 @@
 <?xml version="1.0" ?>
 <mujoco model="assemblyDerived_v17">
+  <compiler angle="radian"/>
+
   <default>
     <mesh scale="0.001 0.001 0.001"/>
     <geom rgba="0.5 0.7 1.0 1" contype="0" conaffinity="0"/>
-    <joint range="-1.5 1.5" armature="0.00001"/>
-    <position kp="1.0"  forcelimited="true" forcerange="-0.2 0.2" ctrllimited="true" ctrlrange="-1.57 1.57"/>
+    <joint damping="0.002" range="-1.5 1.5" armature="0.0005"/>
+    <position kp="0.5" kv="0.02" forcelimited="true" forcerange="-0.2 0.2" ctrllimited="true" ctrlrange="-1.57 1.57"/>
   </default>
   <asset>
     <mesh file="meshes/derivedBody_v1_1.stl" name="derivedBody_v1_1_mesh"/>
@@ -58,7 +60,7 @@
                 <body name="derivedFoot_v2(Mirror)_1">
                   <joint axis="1 0 0" name="derivedFoot_v2(Mirror)_1Revolute_12" type="hinge" pos="0.0570 0.0100 -0.1291"/>
                   <geom density="248" type="mesh" mesh="derivedFoot_v2(Mirror)_1_mesh"/>
-                  <geom type="box"  pos="0.041 0.0075 -0.147591" size="0.021 0.0335 0.0015" rgba="1 0 0 0.5" contype="1" conaffinity="1" density="248" friction="1.5 0.1 0.001" solref="0.02 1"/>
+                  <geom type="box"  pos="0.041 0.0075 -0.147591" size="0.021 0.0335 0.0015" rgba="1 0 0 0.5" contype="1" conaffinity="1" density="248" friction="1 0.1 0.001" solref="0.02 1"/>
                 </body>
               </body>
             </body>
@@ -80,7 +82,7 @@
                 <body name="derivedFoot_v2_1">
                   <joint axis="1 0 0" name="derivedFoot_v2_1Revolute_11" type="hinge" pos="-0.0570 0.0100 -0.1291"/>
                   <geom density="248" type="mesh" mesh="derivedFoot_v2_1_mesh"/>
-                  <geom type="box" pos="-0.041 0.0075 -0.147591" size="0.021 0.0335 0.0015" rgba="1 0 0 0.5" contype="1" conaffinity="1" density="248" friction="1.5 0.1 0.001" solref="0.02 1"/>
+                  <geom type="box" pos="-0.041 0.0075 -0.147591" size="0.021 0.0335 0.0015" rgba="1 0 0 0.5" contype="1" conaffinity="1" density="248" friction="1 0.1 0.001" solref="0.02 1"/>
                 </body>
               </body>
             </body>
