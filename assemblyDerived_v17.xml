@@ -3,8 +3,8 @@
   <default>
     <mesh scale="0.001 0.001 0.001"/>
     <geom rgba="0.5 0.7 1.0 1" contype="0" conaffinity="0"/>
-    <joint damping="0.005" range="-1.5 1.5"/>
-    <position kp="0.25" forcelimited="true" forcerange="-0.2 0.2" ctrllimited="true" ctrlrange="-1.57 1.57"/>
+    <joint range="-1.5 1.5" armature="0.00001"/>
+    <position kp="1.0"  forcelimited="true" forcerange="-0.2 0.2" ctrllimited="true" ctrlrange="-1.57 1.57"/>
   </default>
   <asset>
     <mesh file="meshes/derivedBody_v1_1.stl" name="derivedBody_v1_1_mesh"/>
