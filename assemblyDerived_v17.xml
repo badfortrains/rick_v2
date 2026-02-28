@@ -49,18 +49,18 @@
         <geom mass="0.013" type="mesh" mesh="servo_v9_2_mesh"/>
         <body name="derivedLeg_v1(Mirror)_1">
           <joint axis="1 0 0" name="derivedLeg_v1(Mirror)_1Revolute_4" type="hinge" pos="0.0570 0.0100 0.0109"/>
-          <geom density="248" type="mesh" mesh="derivedLeg_v1(Mirror)_1_mesh"/>
+          <geom mass="0.00686" type="mesh" mesh="derivedLeg_v1(Mirror)_1_mesh"/>
           <body name="servo_v9_4">
             <geom mass="0.013" type="mesh" mesh="servo_v9_4_mesh"/>
             <body name="derivedLeg_v1(Mirror)_2">
               <joint axis="1 0 0" name="derivedLeg_v1(Mirror)_2Revolute_8" type="hinge" pos="0.0570 0.0100 -0.0591"/>
-              <geom density="248" type="mesh" mesh="derivedLeg_v1(Mirror)_2_mesh"/>
+              <geom mass="0.00686" type="mesh" mesh="derivedLeg_v1(Mirror)_2_mesh"/>
               <body name="servo_v9_6">
                 <geom mass="0.013" type="mesh" mesh="servo_v9_6_mesh"/>
                 <body name="derivedFoot_v2(Mirror)_1">
                   <joint axis="1 0 0" name="derivedFoot_v2(Mirror)_1Revolute_12" type="hinge" pos="0.0570 0.0100 -0.1291"/>
-                  <geom density="248" type="mesh" mesh="derivedFoot_v2(Mirror)_1_mesh"/>
-                  <geom type="box"  pos="0.041 0.0075 -0.147591" size="0.021 0.0335 0.0015" rgba="1 0 0 0.5" contype="1" conaffinity="1" density="248" friction="1.5 0.1 0.001" solref="0.02 1"/>
+                  <geom mass="0.01014" type="mesh" mesh="derivedFoot_v2(Mirror)_1_mesh"/>
+                  <geom type="box"  pos="0.041 0.0075 -0.147591" size="0.021 0.0335 0.0015" rgba="1 0 0 0.5" contype="1" conaffinity="1" density="500" friction="1.5 0.1 0.001" solref="0.02 1"/>
                 </body>
               </body>
             </body>
@@ -71,18 +71,18 @@
         <geom mass="0.013" type="mesh" mesh="servo_v9_1_mesh"/>
         <body name="derivedLeg_v2_1">
           <joint axis="1 0 0" name="derivedLeg_v2_1Revolute_3" type="hinge" pos="-0.0570 0.0100 0.0109"/>
-          <geom density="248" type="mesh" mesh="derivedLeg_v2_1_mesh"/>
+          <geom mass="0.00686" type="mesh" mesh="derivedLeg_v2_1_mesh"/>
           <body name="servo_v9_3">
             <geom mass="0.013" type="mesh" mesh="servo_v9_3_mesh"/>
             <body name="derivedLeg_v2_2">
               <joint axis="1 0 0" name="derivedLeg_v2_2Revolute_7" type="hinge" pos="-0.0570 0.0100 -0.0591"/>
-              <geom density="248" type="mesh" mesh="derivedLeg_v2_2_mesh"/>
+              <geom mass="0.00686" type="mesh" mesh="derivedLeg_v2_2_mesh"/>
               <body name="servo_v9_5">
                 <geom mass="0.013" type="mesh" mesh="servo_v9_5_mesh"/>
                 <body name="derivedFoot_v2_1">
                   <joint axis="1 0 0" name="derivedFoot_v2_1Revolute_11" type="hinge" pos="-0.0570 0.0100 -0.1291"/>
-                  <geom density="248" type="mesh" mesh="derivedFoot_v2_1_mesh"/>
-                  <geom type="box" pos="-0.041 0.0075 -0.147591" size="0.021 0.0335 0.0015" rgba="1 0 0 0.5" contype="1" conaffinity="1" density="248" friction="1.5 0.1 0.001" solref="0.02 1"/>
+                  <geom mass="0.01014" type="mesh" mesh="derivedFoot_v2_1_mesh"/>
+                  <geom type="box" pos="-0.041 0.0075 -0.147591" size="0.021 0.0335 0.0015" rgba="1 0 0 0.5" contype="1" conaffinity="1" density="500" friction="1.5 0.1 0.001" solref="0.02 1"/>
                 </body>
               </body>
             </body>
