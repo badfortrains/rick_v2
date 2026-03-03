@@ -1,0 +1,105 @@
+<?xml version="1.0" ?>
+<mujoco model="v3Robot_v15">
+  <compiler angle="radian"/>
+
+  <default>
+    <mesh scale="0.001 0.001 0.001"/>
+    <geom rgba="0.5 0.7 1.0 1" contype="0" conaffinity="0"/>
+    <joint damping="0.002" range="-1.5 1.5" armature="0.0005"/>
+    <position kp="5" kv="0.02" forcelimited="true" forcerange="-0.2 0.2" ctrllimited="true" ctrlrange="-1.57 1.57"/>
+  </default>
+  <asset>
+    <mesh file="meshes/roll_body_derived_v5_1.stl" name="roll_body_derived_v5_1_mesh"/>
+    <mesh file="meshes/servo_v10_1.stl" name="servo_v10_1_mesh"/>
+    <mesh file="meshes/roll_attach_derived_v2_1.stl" name="roll_attach_derived_v2_1_mesh"/>
+    <mesh file="meshes/servo_v10_3.stl" name="servo_v10_3_mesh"/>
+    <mesh file="meshes/leg2Derived_v5_1.stl" name="leg2Derived_v5_1_mesh"/>
+    <mesh file="meshes/servo_v10_5.stl" name="servo_v10_5_mesh"/>
+    <mesh file="meshes/leg2Derived_v5_2.stl" name="leg2Derived_v5_2_mesh"/>
+    <mesh file="meshes/servo_v10_7.stl" name="servo_v10_7_mesh"/>
+    <mesh file="meshes/footDerived_v8_1.stl" name="footDerived_v8_1_mesh"/>
+    <mesh file="meshes/servo_v10_2.stl" name="servo_v10_2_mesh"/>
+    <mesh file="meshes/roll_attach_mirror_derived_v2_1.stl" name="roll_attach_mirror_derived_v2_1_mesh"/>
+    <mesh file="meshes/servo_v10_4.stl" name="servo_v10_4_mesh"/>
+    <mesh file="meshes/legMirrorDerived_v6_1.stl" name="legMirrorDerived_v6_1_mesh"/>
+    <mesh file="meshes/servo_v10_6.stl" name="servo_v10_6_mesh"/>
+    <mesh file="meshes/legMirrorDerived_v6_2.stl" name="legMirrorDerived_v6_2_mesh"/>
+    <mesh file="meshes/servo_v10_8.stl" name="servo_v10_8_mesh"/>
+    <mesh file="meshes/foorMirrorDerived_v11_1.stl" name="foorMirrorDerived_v11_1_mesh"/>
+  </asset>
+  <actuator>
+    <position name="roll_attach_derived_v2_1Revolute_4" joint="roll_attach_derived_v2_1Revolute_4"/>
+    <position name="leg2Derived_v5_1Revolute_8" joint="leg2Derived_v5_1Revolute_8"/>
+    <position name="leg2Derived_v5_2Revolute_12" joint="leg2Derived_v5_2Revolute_12"/>
+    <position name="footDerived_v8_1Revolute_16" joint="footDerived_v8_1Revolute_16"/>
+    <position name="roll_attach_mirror_derived_v2_1Revolute_18" joint="roll_attach_mirror_derived_v2_1Revolute_18"/>
+    <position name="legMirrorDerived_v6_1Revolute_9" joint="legMirrorDerived_v6_1Revolute_9"/>
+    <position name="legMirrorDerived_v6_2Revolute_13" joint="legMirrorDerived_v6_2Revolute_13"/>
+    <position name="foorMirrorDerived_v11_1Revolute_17" joint="foorMirrorDerived_v11_1Revolute_17"/>
+  </actuator>
+  <worldbody>
+    <geom name="floor" size="0 0 .05" type="plane" condim="3" rgba="0.9 0.9 0.9 1" contype="1" conaffinity="1"/>
+    <light mode="targetbodycom" target="body" diffuse=".8 .8 .8" specular="0.3 0.3 0.3" pos="0 -6 4" cutoff="30"/>
+    <body name="body" pos="0 0 0.148044">
+      <freejoint name="root"/>
+      <geom density="500" type="mesh" mesh="roll_body_derived_v5_1_mesh"/>
+      <body name="servo_v10_1">
+        <geom mass="0.013" type="mesh" mesh="servo_v10_1_mesh"/>
+        <body name="roll_attach_derived_v2_1">
+          <joint axis="0 1 0" name="roll_attach_derived_v2_1Revolute_4" type="hinge" pos="0.0116 -0.0208 0.0302"/>
+          <geom density="500" type="mesh" mesh="roll_attach_derived_v2_1_mesh"/>
+          <body name="servo_v10_3">
+            <geom mass="0.013" type="mesh" mesh="servo_v10_3_mesh"/>
+            <body name="leg2Derived_v5_1">
+              <joint axis="1 0 0" name="leg2Derived_v5_1Revolute_8" type="hinge" pos="-0.0149 -0.0000 -0.0222"/>
+              <geom density="500" type="mesh" mesh="leg2Derived_v5_1_mesh"/>
+              <body name="servo_v10_5">
+                <geom mass="0.013" type="mesh" mesh="servo_v10_5_mesh"/>
+                <body name="leg2Derived_v5_2">
+                  <joint axis="1 0 0" name="leg2Derived_v5_2Revolute_12" type="hinge" pos="-0.0146 0.0000 -0.0696"/>
+                  <geom density="500" type="mesh" mesh="leg2Derived_v5_2_mesh"/>
+                  <body name="servo_v10_7">
+                    <geom mass="0.013" type="mesh" mesh="servo_v10_7_mesh"/>
+                    <body name="footDerived_v8_1">
+                      <joint axis="1 0 0" name="footDerived_v8_1Revolute_16" type="hinge" pos="-0.0143 0.0000 -0.1170"/>
+                      <geom density="500" type="mesh" mesh="footDerived_v8_1_mesh" contype="1" conaffinity="1" />
+                    </body>
+                  </body>
+                </body>
+              </body>
+            </body>
+          </body>
+        </body>
+      </body>
+      <body name="servo_v10_2">
+        <geom mass="0.013" type="mesh" mesh="servo_v10_2_mesh"/>
+        <body name="roll_attach_mirror_derived_v2_1">
+          <joint axis="0 1 0" name="roll_attach_mirror_derived_v2_1Revolute_18" type="hinge" pos="0.1116 -0.0208 0.0302"/>
+          <geom density="500" type="mesh" mesh="roll_attach_mirror_derived_v2_1_mesh"/>
+          <body name="servo_v10_4">
+            <geom mass="0.013" type="mesh" mesh="servo_v10_4_mesh"/>
+            <body name="legMirrorDerived_v6_1">
+              <joint axis="1 0 0" name="legMirrorDerived_v6_1Revolute_9" type="hinge" pos="0.1381 0.0000 -0.0222"/>
+              <geom density="500" type="mesh" mesh="legMirrorDerived_v6_1_mesh"/>
+              <body name="servo_v10_6">
+                <geom mass="0.013" type="mesh" mesh="servo_v10_6_mesh"/>
+                <body name="legMirrorDerived_v6_2">
+                  <joint axis="1 0 0" name="legMirrorDerived_v6_2Revolute_13" type="hinge" pos="0.1378 0.0000 -0.0696"/>
+                  <geom density="500" type="mesh" mesh="legMirrorDerived_v6_2_mesh"/>
+                  <body name="servo_v10_8">
+                    <geom mass="0.013" type="mesh" mesh="servo_v10_8_mesh"/>
+                    <body name="foorMirrorDerived_v11_1">
+                      <joint axis="1 0 0" name="foorMirrorDerived_v11_1Revolute_17" type="hinge" pos="0.1375 0.0000 -0.1170"/>
+                      <geom density="500" type="mesh" mesh="foorMirrorDerived_v11_1_mesh" contype="1" conaffinity="1" />
+                    </body>
+                  </body>
+                </body>
+              </body>
+            </body>
+          </body>
+        </body>
+      </body>
+    </body>
+    <camera name="track" mode="trackcom" pos="0 -2.1 0.5" xyaxes="1 0 0 0 0.2 1" target="body"/>
+  </worldbody>
+</mujoco>

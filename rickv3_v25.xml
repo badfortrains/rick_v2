@@ -59,7 +59,7 @@
                 <geom mass="0.013" type="mesh" mesh="servo_v10_3_mesh"/>
                 <body name="footDerived_v6_1">
                   <joint axis="1 0 0" name="footDerived_v6_1Revolute_32" type="hinge" pos="-0.0367 0.0100 -0.0839"/>
-                  <geom density="500" type="mesh" mesh="footDerived_v6_1_mesh" contype="1" conaffinity="1" />
+                  <geom density="500" type="mesh" mesh="footDerived_v6_1_mesh" contype="1" conaffinity="1"  friction="1.5 0.1 0.001" solref="0.02 1"/>
                 </body>
               </body>
             </body>
@@ -80,7 +80,7 @@
                 <geom mass="0.013" type="mesh" mesh="servo_v10_5_mesh"/>
                 <body name="foorMirrorDerived_v9_1">
                   <joint axis="1 0 0" name="foorMirrorDerived_v9_1Revolute_38" type="hinge" pos="0.0767 0.0100 -0.0839"/>
-                  <geom density="500" type="mesh" mesh="foorMirrorDerived_v9_1_mesh" contype="1" conaffinity="1" />
+                  <geom density="500" type="mesh" mesh="foorMirrorDerived_v9_1_mesh" contype="1" conaffinity="1"  friction="1.5 0.1 0.001" solref="0.02 1" />
                 </body>
               </body>
             </body>
