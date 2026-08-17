@@ -63,6 +63,7 @@
                     <body name="footDerived_v9_1">
                       <joint axis="1 0 0" name="footDerived_v9_1Revolute_16" type="hinge" pos="-0.0143 0.0000 -0.1170"/>
                       <geom density="500" type="mesh" mesh="footDerived_v9_1_mesh" contype="1" conaffinity="1"/>
+                      <site name="left_foot_center" pos="0.006466 -0.0075 -0.14504" size="0.003" type="sphere" rgba="1 0 0 1"/>
                     </body>
                   </body>
                 </body>
@@ -91,6 +92,7 @@
                     <body name="footDerived_v9(Mirror)_1">
                       <joint axis="1 0 0" name="footDerived_v9(Mirror)_1Revolute_20" type="hinge" pos="0.1375 0.0000 -0.1170"/>
                       <geom density="500" type="mesh" mesh="footDerived_v9(Mirror)_1_mesh" contype="1" conaffinity="1"/>
+                      <site name="right_foot_center" pos="0.116666 -0.0075 -0.14504" size="0.003" type="sphere" rgba="1 0 0 1"/>
                     </body>
                   </body>
                 </body>
