@@ -1,5 +1,5 @@
 <?xml version="1.0" ?>
-<mujoco model="v4Robot_v28">
+<mujoco model="v4Robot_v51">
   <compiler angle="radian"/>
   <default>
     <mesh scale="0.001 0.001 0.001"/>
@@ -54,6 +54,8 @@
     <mesh file="meshes/foot(Mirror)_1+horn_slide_v23(Mirror)_(3)_1+bearing_slider(Mirror)_(3)_1.stl" name="foot(Mirror)_1+horn_slide_v23(Mirror)_(3)_1+bearing_slider(Mirror)_(3)_1_mesh"/>
     <mesh file="meshes/foot(Mirror)_1+Component54(Mirror)_1.stl" name="foot(Mirror)_1+Component54(Mirror)_1_mesh"/>
     <mesh file="meshes/body_1+pi_holder_v2_1.stl" name="body_1+pi_holder_v2_1_mesh"/>
+    <mesh file="meshes/body_1+pico_1.stl" name="body_1+pico_1_mesh"/>
+    <mesh file="meshes/body_1+imu_1.stl" name="body_1+imu_1_mesh"/>
   </asset>
   <actuator>
     <position name="rollAttachment_1+horn_slide_v23_1+horn_slider_1Revolute_3" joint="rollAttachment_1+horn_slide_v23_1+horn_slider_1Revolute_3"/>
@@ -70,58 +72,58 @@
     <light mode="targetbodycom" target="body" diffuse=".8 .8 .8" specular="0.3 0.3 0.3" pos="0 -6 4" cutoff="30"/>
     <body name="body">
       <freejoint name="root"/>
-      <geom type="mesh" mesh="body_1+motorMountU_v7_3_mesh"/>
-      <geom type="mesh" mesh="body_1+motorMountU_v7(Mirror)_1_mesh"/>
+      <geom density="186" type="mesh" mesh="body_1+motorMountU_v7_3_mesh"/>
+      <geom density="186" type="mesh" mesh="body_1+motorMountU_v7(Mirror)_1_mesh"/>
       <body name="rollAttachment_1+horn_slide_v23_1+servo_v10_1">
-        <geom type="mesh" mesh="rollAttachment_1+horn_slide_v23_1+servo_v10_1_mesh"/>
+        <geom mass="0.0134" type="mesh" mesh="rollAttachment_1+horn_slide_v23_1+servo_v10_1_mesh"/>
         <body name="rollAttachment_1+horn_slide_v23_1+horn_slider_1">
           <joint axis="0 1 0" name="rollAttachment_1+horn_slide_v23_1+horn_slider_1Revolute_3" type="hinge" pos="0.0500 0.0265 0.1707"/>
-          <geom type="mesh" mesh="rollAttachment_1+horn_slide_v23_1+horn_slider_1_mesh"/>
+          <geom density="186" type="mesh" mesh="rollAttachment_1+horn_slide_v23_1+horn_slider_1_mesh"/>
           <body name="rollAttachment_1+horn_slide_v23_1+slide_u_1">
-            <geom type="mesh" mesh="rollAttachment_1+horn_slide_v23_1+slide_u_1_mesh"/>
+            <geom density="186" type="mesh" mesh="rollAttachment_1+horn_slide_v23_1+slide_u_1_mesh"/>
             <body name="rollAttachment_1+horn_slide_v23_1+bearing_slider_1">
-              <geom type="mesh" mesh="rollAttachment_1+horn_slide_v23_1+bearing_slider_1_mesh"/>
+              <geom density="186" type="mesh" mesh="rollAttachment_1+horn_slide_v23_1+bearing_slider_1_mesh"/>
             </body>
             <body name="rollAttachment_1+motorMountU_v7_1">
-              <geom type="mesh" mesh="rollAttachment_1+motorMountU_v7_1_mesh"/>
+              <geom density="186" type="mesh" mesh="rollAttachment_1+motorMountU_v7_1_mesh"/>
               <body name="leg_1+horn_slide_v23_2+servo_v10_1">
-                <geom type="mesh" mesh="leg_1+horn_slide_v23_2+servo_v10_1_mesh"/>
+                <geom mass="0.0134" type="mesh" mesh="leg_1+horn_slide_v23_2+servo_v10_1_mesh"/>
                 <body name="leg_1+horn_slide_v23_2+horn_slider_1">
                   <joint axis="1 0 0" name="leg_1+horn_slide_v23_2+horn_slider_1Revolute_3" type="hinge" pos="0.0765 0.0046 0.1193"/>
-                  <geom type="mesh" mesh="leg_1+horn_slide_v23_2+horn_slider_1_mesh"/>
+                  <geom density="186" type="mesh" mesh="leg_1+horn_slide_v23_2+horn_slider_1_mesh"/>
                   <body name="leg_1+horn_slide_v23_2+slide_u_1">
-                    <geom type="mesh" mesh="leg_1+horn_slide_v23_2+slide_u_1_mesh"/>
+                    <geom density="186" type="mesh" mesh="leg_1+horn_slide_v23_2+slide_u_1_mesh"/>
                     <body name="leg_1+horn_slide_v23_2+bearing_slider_1">
-                      <geom type="mesh" mesh="leg_1+horn_slide_v23_2+bearing_slider_1_mesh"/>
+                      <geom density="186" type="mesh" mesh="leg_1+horn_slide_v23_2+bearing_slider_1_mesh"/>
                     </body>
                     <body name="leg_1+motorMountU_v7_2">
-                      <geom type="mesh" mesh="leg_1+motorMountU_v7_2_mesh"/>
+                      <geom density="186" type="mesh" mesh="leg_1+motorMountU_v7_2_mesh"/>
                       <body name="leg_2+horn_slide_v23_2+servo_v10_1">
-                        <geom type="mesh" mesh="leg_2+horn_slide_v23_2+servo_v10_1_mesh"/>
+                        <geom mass="0.0134" type="mesh" mesh="leg_2+horn_slide_v23_2+servo_v10_1_mesh"/>
                         <body name="leg_2+horn_slide_v23_2+horn_slider_1">
                           <joint axis="1 0 0" name="leg_2+horn_slide_v23_2+horn_slider_1Revolute_3" type="hinge" pos="0.0765 0.0046 0.0719"/>
-                          <geom type="mesh" mesh="leg_2+horn_slide_v23_2+horn_slider_1_mesh"/>
+                          <geom density="186" type="mesh" mesh="leg_2+horn_slide_v23_2+horn_slider_1_mesh"/>
                           <body name="leg_2+horn_slide_v23_2+slide_u_1">
-                            <geom type="mesh" mesh="leg_2+horn_slide_v23_2+slide_u_1_mesh"/>
+                            <geom density="186" type="mesh" mesh="leg_2+horn_slide_v23_2+slide_u_1_mesh"/>
                             <body name="leg_2+horn_slide_v23_2+bearing_slider_1">
-                              <geom type="mesh" mesh="leg_2+horn_slide_v23_2+bearing_slider_1_mesh"/>
+                              <geom density="186" type="mesh" mesh="leg_2+horn_slide_v23_2+bearing_slider_1_mesh"/>
                             </body>
                             <body name="leg_2+motorMountU_v7_2">
-                              <geom type="mesh" mesh="leg_2+motorMountU_v7_2_mesh"/>
+                              <geom density="186" type="mesh" mesh="leg_2+motorMountU_v7_2_mesh"/>
                               <body name="foot_1+horn_slide_v23_3+servo_v10_1">
-                                <geom type="mesh" mesh="foot_1+horn_slide_v23_3+servo_v10_1_mesh"/>
+                                <geom mass="0.0134" type="mesh" mesh="foot_1+horn_slide_v23_3+servo_v10_1_mesh"/>
                                 <body name="foot_1+horn_slide_v23_3+horn_slider_1">
                                   <joint axis="1 0 0" name="foot_1+horn_slide_v23_3+horn_slider_1Revolute_3" type="hinge" pos="0.0765 0.0046 0.0245"/>
-                                  <geom type="mesh" mesh="foot_1+horn_slide_v23_3+horn_slider_1_mesh"/>
+                                  <geom density="186" type="mesh" mesh="foot_1+horn_slide_v23_3+horn_slider_1_mesh"/>
                                   <body name="foot_1+horn_slide_v23_3+slide_u_1">
-                                    <geom type="mesh" mesh="foot_1+horn_slide_v23_3+slide_u_1_mesh"/>
+                                    <geom density="186" type="mesh" mesh="foot_1+horn_slide_v23_3+slide_u_1_mesh"/>
                                     <body name="foot_1+horn_slide_v23_3+bearing_slider_1">
-                                      <geom type="mesh" mesh="foot_1+horn_slide_v23_3+bearing_slider_1_mesh"/>
+                                      <geom density="186" type="mesh" mesh="foot_1+horn_slide_v23_3+bearing_slider_1_mesh"/>
                                     </body>
                                     <body name="foot_1+Component54_1">
-                                      <geom type="mesh" mesh="foot_1+Component54_1_mesh"/>
-                                      <geom name="left_foot_collision" type="box" pos="0.0566 -0.0104 0.00262132" size="0.0175 0.023 0.00412132" contype="1" conaffinity="1" rgba="1 0 0 1" density="0"/>
-                                      <site name="left_foot_center" pos="0.0566 -0.0104 -0.0015" size="0.003" type="sphere" rgba="1 0 0 1"/>
+                                      <geom density="186" type="mesh" mesh="foot_1+Component54_1_mesh"/>
+                                      <geom name="left_foot_collision" type="box" pos="0.0566 -0.0029 0.00262132" size="0.0175 0.0305 0.00412132" contype="1" conaffinity="1" rgba="1 0 0 1" density="0"/>
+                                      <site name="left_foot_center" pos="0.0566 -0.0029 -0.0015" size="0.003" type="sphere" rgba="1 0 0 1"/>
                                     </body>
                                   </body>
                                 </body>
@@ -136,66 +138,66 @@
               </body>
             </body>
             <body name="rollAttachment_1+connector_1">
-              <geom type="mesh" mesh="rollAttachment_1+connector_1_mesh"/>
+              <geom density="186" type="mesh" mesh="rollAttachment_1+connector_1_mesh"/>
             </body>
           </body>
         </body>
       </body>
       <body name="body_1+body_(1)_1">
-        <geom type="mesh" mesh="body_1+body_(1)_1_mesh"/>
+        <geom density="186" type="mesh" mesh="body_1+body_(1)_1_mesh"/>
       </body>
       <body name="rollAttachment(Mirror)_1+horn_slide_v23(Mirror)_1+servo_v10(Mirror)_1">
-        <geom type="mesh" mesh="rollAttachment(Mirror)_1+horn_slide_v23(Mirror)_1+servo_v10(Mirror)_1_mesh"/>
+        <geom mass="0.0134" type="mesh" mesh="rollAttachment(Mirror)_1+horn_slide_v23(Mirror)_1+servo_v10(Mirror)_1_mesh"/>
         <body name="rollAttachment(Mirror)_1+horn_slide_v23(Mirror)_1+horn_slider(Mirror)_1">
           <joint axis="0 1 0" name="rollAttachment(Mirror)_1+horn_slide_v23(Mirror)_1+horn_slider(Mirror)_1Revolute_3" type="hinge" pos="-0.0500 0.0265 0.1707"/>
-          <geom type="mesh" mesh="rollAttachment(Mirror)_1+horn_slide_v23(Mirror)_1+horn_slider(Mirror)_1_mesh"/>
+          <geom density="186" type="mesh" mesh="rollAttachment(Mirror)_1+horn_slide_v23(Mirror)_1+horn_slider(Mirror)_1_mesh"/>
           <body name="rollAttachment(Mirror)_1+horn_slide_v23(Mirror)_1+slide_u(Mirror)_1">
-            <geom type="mesh" mesh="rollAttachment(Mirror)_1+horn_slide_v23(Mirror)_1+slide_u(Mirror)_1_mesh"/>
+            <geom density="186" type="mesh" mesh="rollAttachment(Mirror)_1+horn_slide_v23(Mirror)_1+slide_u(Mirror)_1_mesh"/>
             <body name="rollAttachment(Mirror)_1+horn_slide_v23(Mirror)_1+bearing_slider(Mirror)_1">
-              <geom type="mesh" mesh="rollAttachment(Mirror)_1+horn_slide_v23(Mirror)_1+bearing_slider(Mirror)_1_mesh"/>
+              <geom density="186" type="mesh" mesh="rollAttachment(Mirror)_1+horn_slide_v23(Mirror)_1+bearing_slider(Mirror)_1_mesh"/>
             </body>
             <body name="rollAttachment(Mirror)_1+connector(Mirror)_1">
-              <geom type="mesh" mesh="rollAttachment(Mirror)_1+connector(Mirror)_1_mesh"/>
+              <geom density="186" type="mesh" mesh="rollAttachment(Mirror)_1+connector(Mirror)_1_mesh"/>
               <body name="rollAttachment(Mirror)_1+motorMountU_v7(Mirror)_(1)_1">
-                <geom type="mesh" mesh="rollAttachment(Mirror)_1+motorMountU_v7(Mirror)_(1)_1_mesh"/>
+                <geom density="186" type="mesh" mesh="rollAttachment(Mirror)_1+motorMountU_v7(Mirror)_(1)_1_mesh"/>
                 <body name="leg(Mirror)_1+horn_slide_v23(Mirror)_(1)_1+servo_v10(Mirror)_(1)_1">
-                  <geom type="mesh" mesh="leg(Mirror)_1+horn_slide_v23(Mirror)_(1)_1+servo_v10(Mirror)_(1)_1_mesh"/>
+                  <geom mass="0.0134" type="mesh" mesh="leg(Mirror)_1+horn_slide_v23(Mirror)_(1)_1+servo_v10(Mirror)_(1)_1_mesh"/>
                   <body name="leg(Mirror)_1+horn_slide_v23(Mirror)_(1)_1+horn_slider(Mirror)_(1)_1">
                     <joint axis="-1 0 0" name="leg(Mirror)_1+horn_slide_v23(Mirror)_(1)_1+horn_slider(Mirror)_(1)_1Revolute_5" type="hinge" pos="-0.0765 0.0046 0.1193"/>
-                    <geom type="mesh" mesh="leg(Mirror)_1+horn_slide_v23(Mirror)_(1)_1+horn_slider(Mirror)_(1)_1_mesh"/>
+                    <geom density="186" type="mesh" mesh="leg(Mirror)_1+horn_slide_v23(Mirror)_(1)_1+horn_slider(Mirror)_(1)_1_mesh"/>
                     <body name="leg(Mirror)_1+horn_slide_v23(Mirror)_(1)_1+slide_u(Mirror)_(1)_1">
-                      <geom type="mesh" mesh="leg(Mirror)_1+horn_slide_v23(Mirror)_(1)_1+slide_u(Mirror)_(1)_1_mesh"/>
+                      <geom density="186" type="mesh" mesh="leg(Mirror)_1+horn_slide_v23(Mirror)_(1)_1+slide_u(Mirror)_(1)_1_mesh"/>
                       <body name="leg(Mirror)_1+horn_slide_v23(Mirror)_(1)_1+bearing_slider(Mirror)_(1)_1">
-                        <geom type="mesh" mesh="leg(Mirror)_1+horn_slide_v23(Mirror)_(1)_1+bearing_slider(Mirror)_(1)_1_mesh"/>
+                        <geom density="186" type="mesh" mesh="leg(Mirror)_1+horn_slide_v23(Mirror)_(1)_1+bearing_slider(Mirror)_(1)_1_mesh"/>
                       </body>
                       <body name="leg(Mirror)_1+motorMountU_v7(Mirror)_(2)_1">
-                        <geom type="mesh" mesh="leg(Mirror)_1+motorMountU_v7(Mirror)_(2)_1_mesh"/>
+                        <geom density="186" type="mesh" mesh="leg(Mirror)_1+motorMountU_v7(Mirror)_(2)_1_mesh"/>
                         <body name="leg(Mirror)_(1)_1+horn_slide_v23(Mirror)_(2)_1+servo_v10(Mirror)_(2)_1">
-                          <geom type="mesh" mesh="leg(Mirror)_(1)_1+horn_slide_v23(Mirror)_(2)_1+servo_v10(Mirror)_(2)_1_mesh"/>
+                          <geom mass="0.0134" type="mesh" mesh="leg(Mirror)_(1)_1+horn_slide_v23(Mirror)_(2)_1+servo_v10(Mirror)_(2)_1_mesh"/>
                           <body name="leg(Mirror)_(1)_1+horn_slide_v23(Mirror)_(2)_1+horn_slider(Mirror)_(2)_1">
                             <joint axis="-1 0 0" name="leg(Mirror)_(1)_1+horn_slide_v23(Mirror)_(2)_1+horn_slider(Mirror)_(2)_1Revolute_3" type="hinge" pos="-0.0765 0.0046 0.0719"/>
-                            <geom type="mesh" mesh="leg(Mirror)_(1)_1+horn_slide_v23(Mirror)_(2)_1+horn_slider(Mirror)_(2)_1_mesh"/>
+                            <geom density="186" type="mesh" mesh="leg(Mirror)_(1)_1+horn_slide_v23(Mirror)_(2)_1+horn_slider(Mirror)_(2)_1_mesh"/>
                             <body name="leg(Mirror)_(1)_1+horn_slide_v23(Mirror)_(2)_1+slide_u(Mirror)_(2)_1">
-                              <geom type="mesh" mesh="leg(Mirror)_(1)_1+horn_slide_v23(Mirror)_(2)_1+slide_u(Mirror)_(2)_1_mesh"/>
+                              <geom density="186" type="mesh" mesh="leg(Mirror)_(1)_1+horn_slide_v23(Mirror)_(2)_1+slide_u(Mirror)_(2)_1_mesh"/>
                               <body name="leg(Mirror)_(1)_1+horn_slide_v23(Mirror)_(2)_1+bearing_slider(Mirror)_(2)_1">
-                                <geom type="mesh" mesh="leg(Mirror)_(1)_1+horn_slide_v23(Mirror)_(2)_1+bearing_slider(Mirror)_(2)_1_mesh"/>
+                                <geom density="186" type="mesh" mesh="leg(Mirror)_(1)_1+horn_slide_v23(Mirror)_(2)_1+bearing_slider(Mirror)_(2)_1_mesh"/>
                               </body>
                               <body name="leg(Mirror)_(1)_1+motorMountU_v7(Mirror)_(3)_1">
-                                <geom type="mesh" mesh="leg(Mirror)_(1)_1+motorMountU_v7(Mirror)_(3)_1_mesh"/>
+                                <geom density="186" type="mesh" mesh="leg(Mirror)_(1)_1+motorMountU_v7(Mirror)_(3)_1_mesh"/>
                                 <body name="foot(Mirror)_1+horn_slide_v23(Mirror)_(3)_1+servo_v10(Mirror)_(3)_1">
-                                  <geom type="mesh" mesh="foot(Mirror)_1+horn_slide_v23(Mirror)_(3)_1+servo_v10(Mirror)_(3)_1_mesh"/>
+                                  <geom mass="0.0134" type="mesh" mesh="foot(Mirror)_1+horn_slide_v23(Mirror)_(3)_1+servo_v10(Mirror)_(3)_1_mesh"/>
                                   <body name="foot(Mirror)_1+horn_slide_v23(Mirror)_(3)_1+horn_slider(Mirror)_(3)_1">
                                     <joint axis="-1 0 0" name="foot(Mirror)_1+horn_slide_v23(Mirror)_(3)_1+horn_slider(Mirror)_(3)_1Revolute_3" type="hinge" pos="-0.0765 0.0046 0.0245"/>
-                                    <geom type="mesh" mesh="foot(Mirror)_1+horn_slide_v23(Mirror)_(3)_1+horn_slider(Mirror)_(3)_1_mesh"/>
+                                    <geom density="186" type="mesh" mesh="foot(Mirror)_1+horn_slide_v23(Mirror)_(3)_1+horn_slider(Mirror)_(3)_1_mesh"/>
                                     <body name="foot(Mirror)_1+horn_slide_v23(Mirror)_(3)_1+slide_u(Mirror)_(3)_1">
-                                      <geom type="mesh" mesh="foot(Mirror)_1+horn_slide_v23(Mirror)_(3)_1+slide_u(Mirror)_(3)_1_mesh"/>
+                                      <geom density="186" type="mesh" mesh="foot(Mirror)_1+horn_slide_v23(Mirror)_(3)_1+slide_u(Mirror)_(3)_1_mesh"/>
                                       <body name="foot(Mirror)_1+horn_slide_v23(Mirror)_(3)_1+bearing_slider(Mirror)_(3)_1">
-                                        <geom type="mesh" mesh="foot(Mirror)_1+horn_slide_v23(Mirror)_(3)_1+bearing_slider(Mirror)_(3)_1_mesh"/>
+                                        <geom density="186" type="mesh" mesh="foot(Mirror)_1+horn_slide_v23(Mirror)_(3)_1+bearing_slider(Mirror)_(3)_1_mesh"/>
                                       </body>
                                       <body name="foot(Mirror)_1+Component54(Mirror)_1">
-                                        <geom type="mesh" mesh="foot(Mirror)_1+Component54(Mirror)_1_mesh"/>
-                                        <geom name="right_foot_collision" type="box" pos="-0.0566 -0.0104 0.00262132" size="0.0175 0.023 0.00412132" contype="1" conaffinity="1" rgba="1 0 0 1" density="0"/>
-                                        <site name="right_foot_center" pos="-0.0566 -0.0104 -0.0015" size="0.003" type="sphere" rgba="1 0 0 1"/>
+                                        <geom density="186" type="mesh" mesh="foot(Mirror)_1+Component54(Mirror)_1_mesh"/>
+                                        <geom name="right_foot_collision" type="box" pos="-0.0566 -0.0029 0.00262132" size="0.0175 0.0305 0.00412132" contype="1" conaffinity="1" rgba="1 0 0 1" density="0"/>
+                                        <site name="right_foot_center" pos="-0.0566 -0.0029 -0.0015" size="0.003" type="sphere" rgba="1 0 0 1"/>
                                       </body>
                                     </body>
                                   </body>
@@ -214,7 +216,13 @@
         </body>
       </body>
       <body name="body_1+pi_holder_v2_1">
-        <geom type="mesh" mesh="body_1+pi_holder_v2_1_mesh"/>
+        <geom density="186" type="mesh" mesh="body_1+pi_holder_v2_1_mesh"/>
+        <body name="body_1+pico_1">
+          <geom density="186" type="mesh" mesh="body_1+pico_1_mesh" mass="0.005"/>
+        </body>
+        <body name="body_1+imu_1">
+          <geom density="186" type="mesh" mesh="body_1+imu_1_mesh" mass="0.002"/>
+        </body>
       </body>
     </body>
     <camera name="track" mode="trackcom" pos="0 -2.1 0.5" xyaxes="1 0 0 0 0.2 1" target="body"/>
