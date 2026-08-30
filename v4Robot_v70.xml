@@ -1,5 +1,5 @@
 <?xml version="1.0" ?>
-<mujoco model="v4Robot_v51">
+<mujoco model="v4Robot_v70">
   <compiler angle="radian"/>
   <default>
     <mesh scale="0.001 0.001 0.001"/>
@@ -48,11 +48,11 @@
     <mesh file="meshes/leg(Mirror)_(1)_1+horn_slide_v23(Mirror)_(2)_1+slide_u(Mirror)_(2)_1.stl" name="leg(Mirror)_(1)_1+horn_slide_v23(Mirror)_(2)_1+slide_u(Mirror)_(2)_1_mesh"/>
     <mesh file="meshes/leg(Mirror)_(1)_1+horn_slide_v23(Mirror)_(2)_1+bearing_slider(Mirror)_(2)_1.stl" name="leg(Mirror)_(1)_1+horn_slide_v23(Mirror)_(2)_1+bearing_slider(Mirror)_(2)_1_mesh"/>
     <mesh file="meshes/leg(Mirror)_(1)_1+motorMountU_v7(Mirror)_(3)_1.stl" name="leg(Mirror)_(1)_1+motorMountU_v7(Mirror)_(3)_1_mesh"/>
-    <mesh file="meshes/foot(Mirror)_1+horn_slide_v23(Mirror)_(3)_1+servo_v10(Mirror)_(3)_1.stl" name="foot(Mirror)_1+horn_slide_v23(Mirror)_(3)_1+servo_v10(Mirror)_(3)_1_mesh"/>
-    <mesh file="meshes/foot(Mirror)_1+horn_slide_v23(Mirror)_(3)_1+horn_slider(Mirror)_(3)_1.stl" name="foot(Mirror)_1+horn_slide_v23(Mirror)_(3)_1+horn_slider(Mirror)_(3)_1_mesh"/>
-    <mesh file="meshes/foot(Mirror)_1+horn_slide_v23(Mirror)_(3)_1+slide_u(Mirror)_(3)_1.stl" name="foot(Mirror)_1+horn_slide_v23(Mirror)_(3)_1+slide_u(Mirror)_(3)_1_mesh"/>
-    <mesh file="meshes/foot(Mirror)_1+horn_slide_v23(Mirror)_(3)_1+bearing_slider(Mirror)_(3)_1.stl" name="foot(Mirror)_1+horn_slide_v23(Mirror)_(3)_1+bearing_slider(Mirror)_(3)_1_mesh"/>
-    <mesh file="meshes/foot(Mirror)_1+Component54(Mirror)_1.stl" name="foot(Mirror)_1+Component54(Mirror)_1_mesh"/>
+    <mesh file="meshes/foot(Mirror)_(1)_1+horn_slide_v23(Mirror)_(4)_1+servo_v10(Mirror)_(4)_1.stl" name="foot(Mirror)_(1)_1+horn_slide_v23(Mirror)_(4)_1+servo_v10(Mirror)_(4)_1_mesh"/>
+    <mesh file="meshes/foot(Mirror)_(1)_1+horn_slide_v23(Mirror)_(4)_1+horn_slider(Mirror)_(4)_1.stl" name="foot(Mirror)_(1)_1+horn_slide_v23(Mirror)_(4)_1+horn_slider(Mirror)_(4)_1_mesh"/>
+    <mesh file="meshes/foot(Mirror)_(1)_1+horn_slide_v23(Mirror)_(4)_1+slide_u(Mirror)_(4)_1.stl" name="foot(Mirror)_(1)_1+horn_slide_v23(Mirror)_(4)_1+slide_u(Mirror)_(4)_1_mesh"/>
+    <mesh file="meshes/foot(Mirror)_(1)_1+horn_slide_v23(Mirror)_(4)_1+bearing_slider(Mirror)_(4)_1.stl" name="foot(Mirror)_(1)_1+horn_slide_v23(Mirror)_(4)_1+bearing_slider(Mirror)_(4)_1_mesh"/>
+    <mesh file="meshes/foot(Mirror)_(1)_1+Component54(Mirror)_(1)_1.stl" name="foot(Mirror)_(1)_1+Component54(Mirror)_(1)_1_mesh"/>
     <mesh file="meshes/body_1+pi_holder_v2_1.stl" name="body_1+pi_holder_v2_1_mesh"/>
     <mesh file="meshes/body_1+pico_1.stl" name="body_1+pico_1_mesh"/>
     <mesh file="meshes/body_1+imu_1.stl" name="body_1+imu_1_mesh"/>
@@ -65,7 +65,7 @@
     <position name="rollAttachment(Mirror)_1+horn_slide_v23(Mirror)_1+horn_slider(Mirror)_1Revolute_3" joint="rollAttachment(Mirror)_1+horn_slide_v23(Mirror)_1+horn_slider(Mirror)_1Revolute_3"/>
     <position name="leg(Mirror)_1+horn_slide_v23(Mirror)_(1)_1+horn_slider(Mirror)_(1)_1Revolute_5" joint="leg(Mirror)_1+horn_slide_v23(Mirror)_(1)_1+horn_slider(Mirror)_(1)_1Revolute_5"/>
     <position name="leg(Mirror)_(1)_1+horn_slide_v23(Mirror)_(2)_1+horn_slider(Mirror)_(2)_1Revolute_3" joint="leg(Mirror)_(1)_1+horn_slide_v23(Mirror)_(2)_1+horn_slider(Mirror)_(2)_1Revolute_3"/>
-    <position name="foot(Mirror)_1+horn_slide_v23(Mirror)_(3)_1+horn_slider(Mirror)_(3)_1Revolute_3" joint="foot(Mirror)_1+horn_slide_v23(Mirror)_(3)_1+horn_slider(Mirror)_(3)_1Revolute_3"/>
+    <position name="foot(Mirror)_(1)_1+horn_slide_v23(Mirror)_(4)_1+horn_slider(Mirror)_(4)_1Revolute_3" joint="foot(Mirror)_(1)_1+horn_slide_v23(Mirror)_(4)_1+horn_slider(Mirror)_(4)_1Revolute_3"/>
   </actuator>
   <worldbody>
     <geom name="floor" size="0 0 .05" type="plane" condim="3" rgba="0.9 0.9 0.9 1" contype="1" conaffinity="1"/>
@@ -122,8 +122,8 @@
                                     </body>
                                     <body name="foot_1+Component54_1">
                                       <geom density="186" type="mesh" mesh="foot_1+Component54_1_mesh"/>
-                                      <geom name="left_foot_collision" type="box" pos="0.0566 -0.0029 0.00262132" size="0.0175 0.0305 0.00412132" contype="1" conaffinity="1" rgba="1 0 0 1" density="0"/>
-                                      <site name="left_foot_center" pos="0.0566 -0.0029 -0.0015" size="0.003" type="sphere" rgba="1 0 0 1"/>
+                                      <geom name="left_foot_collision" type="box" pos="0.0566 -0.0059 0.00262132" size="0.0375 0.0375 0.00412132" contype="1" conaffinity="1" rgba="1 0 0 1" density="0"/>
+                                      <site name="left_foot_center" pos="0.0566 -0.0059 -0.0015" size="0.003" type="sphere" rgba="1 0 0 1"/>
                                     </body>
                                   </body>
                                 </body>
@@ -184,20 +184,20 @@
                               </body>
                               <body name="leg(Mirror)_(1)_1+motorMountU_v7(Mirror)_(3)_1">
                                 <geom density="186" type="mesh" mesh="leg(Mirror)_(1)_1+motorMountU_v7(Mirror)_(3)_1_mesh"/>
-                                <body name="foot(Mirror)_1+horn_slide_v23(Mirror)_(3)_1+servo_v10(Mirror)_(3)_1">
-                                  <geom mass="0.0134" type="mesh" mesh="foot(Mirror)_1+horn_slide_v23(Mirror)_(3)_1+servo_v10(Mirror)_(3)_1_mesh"/>
-                                  <body name="foot(Mirror)_1+horn_slide_v23(Mirror)_(3)_1+horn_slider(Mirror)_(3)_1">
-                                    <joint axis="-1 0 0" name="foot(Mirror)_1+horn_slide_v23(Mirror)_(3)_1+horn_slider(Mirror)_(3)_1Revolute_3" type="hinge" pos="-0.0765 0.0046 0.0245"/>
-                                    <geom density="186" type="mesh" mesh="foot(Mirror)_1+horn_slide_v23(Mirror)_(3)_1+horn_slider(Mirror)_(3)_1_mesh"/>
-                                    <body name="foot(Mirror)_1+horn_slide_v23(Mirror)_(3)_1+slide_u(Mirror)_(3)_1">
-                                      <geom density="186" type="mesh" mesh="foot(Mirror)_1+horn_slide_v23(Mirror)_(3)_1+slide_u(Mirror)_(3)_1_mesh"/>
-                                      <body name="foot(Mirror)_1+horn_slide_v23(Mirror)_(3)_1+bearing_slider(Mirror)_(3)_1">
-                                        <geom density="186" type="mesh" mesh="foot(Mirror)_1+horn_slide_v23(Mirror)_(3)_1+bearing_slider(Mirror)_(3)_1_mesh"/>
+                                <body name="foot(Mirror)_(1)_1+horn_slide_v23(Mirror)_(4)_1+servo_v10(Mirror)_(4)_1">
+                                  <geom mass="0.0134" type="mesh" mesh="foot(Mirror)_(1)_1+horn_slide_v23(Mirror)_(4)_1+servo_v10(Mirror)_(4)_1_mesh"/>
+                                  <body name="foot(Mirror)_(1)_1+horn_slide_v23(Mirror)_(4)_1+horn_slider(Mirror)_(4)_1">
+                                    <joint axis="-1 0 0" name="foot(Mirror)_(1)_1+horn_slide_v23(Mirror)_(4)_1+horn_slider(Mirror)_(4)_1Revolute_3" type="hinge" pos="-0.0765 0.0046 0.0245"/>
+                                    <geom density="186" type="mesh" mesh="foot(Mirror)_(1)_1+horn_slide_v23(Mirror)_(4)_1+horn_slider(Mirror)_(4)_1_mesh"/>
+                                    <body name="foot(Mirror)_(1)_1+horn_slide_v23(Mirror)_(4)_1+slide_u(Mirror)_(4)_1">
+                                      <geom density="186" type="mesh" mesh="foot(Mirror)_(1)_1+horn_slide_v23(Mirror)_(4)_1+slide_u(Mirror)_(4)_1_mesh"/>
+                                      <body name="foot(Mirror)_(1)_1+horn_slide_v23(Mirror)_(4)_1+bearing_slider(Mirror)_(4)_1">
+                                        <geom density="186" type="mesh" mesh="foot(Mirror)_(1)_1+horn_slide_v23(Mirror)_(4)_1+bearing_slider(Mirror)_(4)_1_mesh"/>
                                       </body>
-                                      <body name="foot(Mirror)_1+Component54(Mirror)_1">
-                                        <geom density="186" type="mesh" mesh="foot(Mirror)_1+Component54(Mirror)_1_mesh"/>
-                                        <geom name="right_foot_collision" type="box" pos="-0.0566 -0.0029 0.00262132" size="0.0175 0.0305 0.00412132" contype="1" conaffinity="1" rgba="1 0 0 1" density="0"/>
-                                        <site name="right_foot_center" pos="-0.0566 -0.0029 -0.0015" size="0.003" type="sphere" rgba="1 0 0 1"/>
+                                      <body name="foot(Mirror)_(1)_1+Component54(Mirror)_(1)_1">
+                                        <geom density="186" type="mesh" mesh="foot(Mirror)_(1)_1+Component54(Mirror)_(1)_1_mesh"/>
+                                        <geom name="right_foot_collision" type="box" pos="-0.0566 -0.0059 0.00262132" size="0.0375 0.0375 0.00412132" contype="1" conaffinity="1" rgba="1 0 0 1" density="0"/>
+                                        <site name="right_foot_center" pos="-0.0566 -0.0059 -0.0015" size="0.003" type="sphere" rgba="1 0 0 1"/>
                                       </body>
                                     </body>
                                   </body>
@@ -218,10 +218,10 @@
       <body name="body_1+pi_holder_v2_1">
         <geom density="186" type="mesh" mesh="body_1+pi_holder_v2_1_mesh"/>
         <body name="body_1+pico_1">
-          <geom density="186" type="mesh" mesh="body_1+pico_1_mesh" mass="0.005"/>
+          <geom density="186" type="mesh" mesh="body_1+pico_1_mesh"/>
         </body>
         <body name="body_1+imu_1">
-          <geom density="186" type="mesh" mesh="body_1+imu_1_mesh" mass="0.002"/>
+          <geom density="186" type="mesh" mesh="body_1+imu_1_mesh"/>
         </body>
       </body>
     </body>
