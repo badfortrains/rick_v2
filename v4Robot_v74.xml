@@ -1,11 +1,11 @@
 <?xml version="1.0" ?>
-<mujoco model="v4Robot_v70">
+<mujoco model="v4Robot_v74">
   <compiler angle="radian"/>
   <default>
     <mesh scale="0.001 0.001 0.001"/>
     <geom rgba="0.5 0.7 1.0 1" contype="0" conaffinity="0"/>
     <joint damping="0.002" range="-1.5 1.5" armature="0.0005"/>
-    <position kp="3" kv="0.01" forcelimited="true" forcerange="-0.1 0.1" ctrllimited="true" ctrlrange="-1.57 1.57"/>
+    <position kp="5" kv="0.02" forcelimited="true" forcerange="-0.1 0.1" ctrllimited="true" ctrlrange="-1.57 1.57"/>
   </default>
   <asset>
     <mesh file="meshes/body_1+motorMountU_v7_3.stl" name="body_1+motorMountU_v7_3_mesh"/>
@@ -121,8 +121,7 @@
                                       <geom density="186" type="mesh" mesh="foot_1+horn_slide_v23_3+bearing_slider_1_mesh"/>
                                     </body>
                                     <body name="foot_1+Component54_1">
-                                      <geom density="186" type="mesh" mesh="foot_1+Component54_1_mesh"/>
-                                      <geom name="left_foot_collision" type="box" pos="0.0566 -0.0059 0.00262132" size="0.0375 0.0375 0.00412132" contype="1" conaffinity="1" rgba="1 0 0 1" density="0"/>
+                                      <geom density="186" type="mesh" mesh="foot_1+Component54_1_mesh" contype="1" conaffinity="1"/>
                                       <site name="left_foot_center" pos="0.0566 -0.0059 -0.0015" size="0.003" type="sphere" rgba="1 0 0 1"/>
                                     </body>
                                   </body>
@@ -195,8 +194,7 @@
                                         <geom density="186" type="mesh" mesh="foot(Mirror)_(1)_1+horn_slide_v23(Mirror)_(4)_1+bearing_slider(Mirror)_(4)_1_mesh"/>
                                       </body>
                                       <body name="foot(Mirror)_(1)_1+Component54(Mirror)_(1)_1">
-                                        <geom density="186" type="mesh" mesh="foot(Mirror)_(1)_1+Component54(Mirror)_(1)_1_mesh"/>
-                                        <geom name="right_foot_collision" type="box" pos="-0.0566 -0.0059 0.00262132" size="0.0375 0.0375 0.00412132" contype="1" conaffinity="1" rgba="1 0 0 1" density="0"/>
+                                        <geom density="186" type="mesh" mesh="foot(Mirror)_(1)_1+Component54(Mirror)_(1)_1_mesh" contype="1" conaffinity="1"/>
                                         <site name="right_foot_center" pos="-0.0566 -0.0059 -0.0015" size="0.003" type="sphere" rgba="1 0 0 1"/>
                                       </body>
                                     </body>
