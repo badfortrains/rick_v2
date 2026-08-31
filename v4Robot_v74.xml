@@ -4,8 +4,8 @@
   <default>
     <mesh scale="0.001 0.001 0.001"/>
     <geom rgba="0.5 0.7 1.0 1" contype="0" conaffinity="0"/>
-    <joint damping="0.002" range="-1.5 1.5" armature="0.0005"/>
-    <position kp="5" kv="0.02" forcelimited="true" forcerange="-0.1 0.1" ctrllimited="true" ctrlrange="-1.57 1.57"/>
+    <joint frictionloss="0.015" damping="0.002" range="-1.5 1.5" armature="0.0005"/>
+    <position kp="1" kv="0.004"  forcelimited="true" forcerange="-0.1 0.1" ctrllimited="true" ctrlrange="-1.57 1.57"/>
   </default>
   <asset>
     <mesh file="meshes/body_1+motorMountU_v7_3.stl" name="body_1+motorMountU_v7_3_mesh"/>
