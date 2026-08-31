@@ -121,7 +121,7 @@
                                       <geom density="186" type="mesh" mesh="foot_1+horn_slide_v23_3+bearing_slider_1_mesh"/>
                                     </body>
                                     <body name="foot_1+Component54_1">
-                                      <geom density="186" type="mesh" mesh="foot_1+Component54_1_mesh" contype="1" conaffinity="1"/>
+                                      <geom density="186" type="mesh" mesh="foot_1+Component54_1_mesh"  contype="1" conaffinity="1"/>
                                       <site name="left_foot_center" pos="0.0566 -0.0059 -0.0015" size="0.003" type="sphere" rgba="1 0 0 1"/>
                                     </body>
                                   </body>
@@ -220,6 +220,7 @@
         </body>
         <body name="body_1+imu_1">
           <geom density="186" type="mesh" mesh="body_1+imu_1_mesh"/>
+          <site name="imu" pos="0 -0.0045 0.2217" size="0.003" type="sphere" rgba="0 1 0 1"/>
         </body>
       </body>
     </body>
