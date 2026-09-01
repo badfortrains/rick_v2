@@ -1,5 +1,5 @@
 <?xml version="1.0" ?>
-<mujoco model="v4Robot_v74">
+<mujoco model="v4Robot_v75">
   <compiler angle="radian"/>
   <default>
     <mesh scale="0.001 0.001 0.001"/>
@@ -121,7 +121,8 @@
                                       <geom density="186" type="mesh" mesh="foot_1+horn_slide_v23_3+bearing_slider_1_mesh"/>
                                     </body>
                                     <body name="foot_1+Component54_1">
-                                      <geom density="186" type="mesh" mesh="foot_1+Component54_1_mesh"  contype="1" conaffinity="1"/>
+                                      <geom density="186" type="mesh" mesh="foot_1+Component54_1_mesh"/>
+                                      <geom name="left_foot_collision" type="box" pos="0.0566 -0.0059 0.0005" size="0.0375 0.0375 0.002" contype="1" conaffinity="1" rgba="1 0 0 1" density="0"/>
                                       <site name="left_foot_center" pos="0.0566 -0.0059 -0.0015" size="0.003" type="sphere" rgba="1 0 0 1"/>
                                     </body>
                                   </body>
@@ -194,7 +195,8 @@
                                         <geom density="186" type="mesh" mesh="foot(Mirror)_(1)_1+horn_slide_v23(Mirror)_(4)_1+bearing_slider(Mirror)_(4)_1_mesh"/>
                                       </body>
                                       <body name="foot(Mirror)_(1)_1+Component54(Mirror)_(1)_1">
-                                        <geom density="186" type="mesh" mesh="foot(Mirror)_(1)_1+Component54(Mirror)_(1)_1_mesh" contype="1" conaffinity="1"/>
+                                        <geom density="186" type="mesh" mesh="foot(Mirror)_(1)_1+Component54(Mirror)_(1)_1_mesh"/>
+                                        <geom name="right_foot_collision" type="box" pos="-0.0566 -0.0059 0.0005" size="0.0375 0.0375 0.002" contype="1" conaffinity="1" rgba="1 0 0 1" density="0"/>
                                         <site name="right_foot_center" pos="-0.0566 -0.0059 -0.0015" size="0.003" type="sphere" rgba="1 0 0 1"/>
                                       </body>
                                     </body>
