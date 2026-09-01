@@ -228,4 +228,12 @@
     </body>
     <camera name="track" mode="trackcom" pos="0 -2.1 0.5" xyaxes="1 0 0 0 0.2 1" target="body"/>
   </worldbody>
+  <contact>
+    <pair name="left_foot_floor" geom1="left_foot_collision" geom2="floor" condim="3" friction="0.35 0.35"/>
+    <pair name="right_foot_floor" geom1="right_foot_collision" geom2="floor" condim="3" friction="0.35 0.35"/>
+  </contact>
+  <sensor>
+    <contact name="left_foot_floor_found" geom1="left_foot_collision" geom2="floor" reduce="mindist" num="1" data="found"/>
+    <contact name="right_foot_floor_found" geom1="right_foot_collision" geom2="floor" reduce="mindist" num="1" data="found"/>
+  </sensor>
 </mujoco>
