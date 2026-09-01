@@ -5,12 +5,7 @@
     <mesh scale="0.001 0.001 0.001"/>
     <geom rgba="0.5 0.7 1.0 1" contype="0" conaffinity="0"/>
     <joint range="-1.5 1.5" armature="0.001" frictionloss="0.01" damping="0.01"/>
-    <dcmotor 
-             input="pos"
-             nominal="4.8 0.177 10.47"
-             saturation="0.177 0 0"
-             controller="5 0 0.01 0 0 4.8"
-             ctrlrange="-1.2 1.2"/>
+    <position kp="5" kv="0.01" forcelimited="true" forcerange="-0.12 0.12" ctrllimited="true" ctrlrange="-1.57 1.57"/>
   </default>
   <asset>
     <mesh file="meshes/body_1+motorMountU_v7_3.stl" name="body_1+motorMountU_v7_3_mesh"/>
@@ -63,14 +58,14 @@
     <mesh file="meshes/body_1+imu_1.stl" name="body_1+imu_1_mesh"/>
   </asset>
   <actuator>
-    <dcmotor name="rollAttachment_1+horn_slide_v23_1+horn_slider_1Revolute_3" joint="rollAttachment_1+horn_slide_v23_1+horn_slider_1Revolute_3"/>
-    <dcmotor name="leg_1+horn_slide_v23_2+horn_slider_1Revolute_3" joint="leg_1+horn_slide_v23_2+horn_slider_1Revolute_3"/>
-    <dcmotor name="leg_2+horn_slide_v23_2+horn_slider_1Revolute_3" joint="leg_2+horn_slide_v23_2+horn_slider_1Revolute_3"/>
-    <dcmotor name="foot_1+horn_slide_v23_3+horn_slider_1Revolute_3" joint="foot_1+horn_slide_v23_3+horn_slider_1Revolute_3"/>
-    <dcmotor name="rollAttachment(Mirror)_1+horn_slide_v23(Mirror)_1+horn_slider(Mirror)_1Revolute_3" joint="rollAttachment(Mirror)_1+horn_slide_v23(Mirror)_1+horn_slider(Mirror)_1Revolute_3"/>
-    <dcmotor name="leg(Mirror)_1+horn_slide_v23(Mirror)_(1)_1+horn_slider(Mirror)_(1)_1Revolute_5" joint="leg(Mirror)_1+horn_slide_v23(Mirror)_(1)_1+horn_slider(Mirror)_(1)_1Revolute_5"/>
-    <dcmotor name="leg(Mirror)_(1)_1+horn_slide_v23(Mirror)_(2)_1+horn_slider(Mirror)_(2)_1Revolute_3" joint="leg(Mirror)_(1)_1+horn_slide_v23(Mirror)_(2)_1+horn_slider(Mirror)_(2)_1Revolute_3"/>
-    <dcmotor name="foot(Mirror)_(1)_1+horn_slide_v23(Mirror)_(4)_1+horn_slider(Mirror)_(4)_1Revolute_3" joint="foot(Mirror)_(1)_1+horn_slide_v23(Mirror)_(4)_1+horn_slider(Mirror)_(4)_1Revolute_3"/>
+    <position name="rollAttachment_1+horn_slide_v23_1+horn_slider_1Revolute_3" joint="rollAttachment_1+horn_slide_v23_1+horn_slider_1Revolute_3"/>
+    <position name="leg_1+horn_slide_v23_2+horn_slider_1Revolute_3" joint="leg_1+horn_slide_v23_2+horn_slider_1Revolute_3"/>
+    <position name="leg_2+horn_slide_v23_2+horn_slider_1Revolute_3" joint="leg_2+horn_slide_v23_2+horn_slider_1Revolute_3"/>
+    <position name="foot_1+horn_slide_v23_3+horn_slider_1Revolute_3" joint="foot_1+horn_slide_v23_3+horn_slider_1Revolute_3"/>
+    <position name="rollAttachment(Mirror)_1+horn_slide_v23(Mirror)_1+horn_slider(Mirror)_1Revolute_3" joint="rollAttachment(Mirror)_1+horn_slide_v23(Mirror)_1+horn_slider(Mirror)_1Revolute_3"/>
+    <position name="leg(Mirror)_1+horn_slide_v23(Mirror)_(1)_1+horn_slider(Mirror)_(1)_1Revolute_5" joint="leg(Mirror)_1+horn_slide_v23(Mirror)_(1)_1+horn_slider(Mirror)_(1)_1Revolute_5"/>
+    <position name="leg(Mirror)_(1)_1+horn_slide_v23(Mirror)_(2)_1+horn_slider(Mirror)_(2)_1Revolute_3" joint="leg(Mirror)_(1)_1+horn_slide_v23(Mirror)_(2)_1+horn_slider(Mirror)_(2)_1Revolute_3"/>
+    <position name="foot(Mirror)_(1)_1+horn_slide_v23(Mirror)_(4)_1+horn_slider(Mirror)_(4)_1Revolute_3" joint="foot(Mirror)_(1)_1+horn_slide_v23(Mirror)_(4)_1+horn_slider(Mirror)_(4)_1Revolute_3"/>
   </actuator>
   <worldbody>
     <geom name="floor" size="0 0 .05" type="plane" condim="3" rgba="0.9 0.9 0.9 1" contype="1" conaffinity="1"/>
