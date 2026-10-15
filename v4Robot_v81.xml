@@ -234,4 +234,10 @@
     <contact name="left_foot_floor_found" geom1="left_foot_collision" geom2="floor" reduce="mindist" num="1" data="found"/>
     <contact name="right_foot_floor_found" geom1="right_foot_collision" geom2="floor" reduce="mindist" num="1" data="found"/>
   </sensor>
+  <keyframe>
+    <key name='basic'
+      qpos="-0.000828309 -0.00254363 -0.00821241 0.999926 -0.0120637 0.000344713 -0.00164274 -0.000596972 -0.402716 0.843992 -0.418453 -0.000581764 0.392251 -0.839584 0.423045"
+    ctrl="0 -0.405 0.84 -0.42 0 0.39 -0.84 0.42"
+  />
+  </keyframe>
 </mujoco>
