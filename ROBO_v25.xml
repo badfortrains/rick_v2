@@ -40,9 +40,9 @@
     <geom name="floor" size="0 0 .05" type="plane" condim="3" rgba="0.9 0.9 0.9 1" contype="1" conaffinity="1"/>
     <light mode="targetbodycom" target="body" diffuse=".8 .8 .8" specular="0.3 0.3 0.3" pos="0 -6 4" cutoff="30"/>
     <body name="body">
-      <site name="imu" pos="0 -0.0045 0.0152" size="0.003" type="sphere" rgba="0 1 0 1"/>
+      <site name="imu" pos="-0.055 0 0" size="0.003" type="sphere" rgba="0 1 0 1"/>
       <freejoint name="root"/>
-      <geom mass="0.070"type="mesh" mesh="body_1_mesh"/>
+      <geom mass="0.060" type="mesh" mesh="body_1_mesh"/>
       <body name="hip_bracket(Mirror)_1+servo_(1)(Mirror)_1">
         <geom mass="0.0134" type="mesh" mesh="hip_bracket(Mirror)_1+servo_(1)(Mirror)_1_mesh"/>
         <body name="hip_bracket(Mirror)_1+bracket_(1)(Mirror)_1">
@@ -63,7 +63,7 @@
                     <body name="ankle_bracket(Mirror)_1+bracket_(2)_(2)(Mirror)_1">
                       <joint axis="1 0 0" name="ankle_bracket(Mirror)_1+bracket_(2)_(2)(Mirror)_1Revolute_1" type="hinge" pos="-0.0130 0.0039 -0.0900"/>
                       <geom name="right_foot_collision" density="186" type="mesh" mesh="ankle_bracket(Mirror)_1+bracket_(2)_(2)(Mirror)_1_mesh" contype="1" conaffinity="1"/>
-                      <site name="right_foot_center" pos="-0.0318 -0.001075 -0.122" size="0.003" type="sphere" rgba="1 0 0 1"/>
+                      <site name="right_foot_center" pos="-0.09025 -0.001075 -0.13855" size="0.003" type="sphere" rgba="1 0 0 1"/>
                     </body>
                   </body>
                 </body>
@@ -92,7 +92,7 @@
                     <body name="ankle_bracket_1+bracket_(2)_(2)_1">
                       <joint axis="-1 0 0" name="ankle_bracket_1+bracket_(2)_(2)_1Revolute_1" type="hinge" pos="0.0332 0.0039 -0.0900"/>
                       <geom name="left_foot_collision" density="186" type="mesh" mesh="ankle_bracket_1+bracket_(2)_(2)_1_mesh" contype="1" conaffinity="1"/>
-                      <site name="left_foot_center" pos="0.042 -0.001075 -0.122" size="0.003" type="sphere" rgba="1 0 0 1"/>
+                      <site name="left_foot_center" pos="-0.01665 -0.001075 -0.13855" size="0.003" type="sphere" rgba="1 0 0 1"/>
                     </body>
                   </body>
                 </body>
@@ -115,7 +115,7 @@
   <keyframe>
     <key
   name='basic'
-  qpos="-4.62652e-05 0.000989846 0.119628 0.999999 0.000472166 -1.83369e-05 0.00139889 0.000205981 -0.290713 0.580496 -0.290732 -3.71434e-05 0.290682 -0.580382 0.290642"
+  qpos="0.000389242 0.00107671 0.136092 0.999998 6.97123e-05 -0.00118288 0.00177158 0.00541094 -0.290574 0.580919 -0.290568 0.00216401 0.290218 -0.580284 0.290194"
   ctrl="0 -0.29 0.58 -0.29 0 0.29 -0.58 0.29"
 />
   </keyframe>
