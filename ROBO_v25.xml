@@ -1,5 +1,5 @@
 <?xml version="1.0" ?>
-<mujoco model="ROBO_v25">
+<mujoco model="RoboVert_v10">
   <compiler angle="radian"/>
   <default>
     <mesh scale="0.001 0.001 0.001"/>
@@ -9,32 +9,32 @@
   </default>
   <asset>
     <mesh file="meshes/body_1.stl" name="body_1_mesh"/>
-    <mesh file="meshes/hip_bracket(Mirror)_1+servo_(1)(Mirror)_1.stl" name="hip_bracket(Mirror)_1+servo_(1)(Mirror)_1_mesh"/>
-    <mesh file="meshes/hip_bracket(Mirror)_1+bracket_(1)(Mirror)_1.stl" name="hip_bracket(Mirror)_1+bracket_(1)(Mirror)_1_mesh"/>
-    <mesh file="meshes/hip_pitch_bracket(Mirror)_1+servo_(2)(Mirror)_1.stl" name="hip_pitch_bracket(Mirror)_1+servo_(2)(Mirror)_1_mesh"/>
-    <mesh file="meshes/hip_pitch_bracket(Mirror)_1+bracket_(2)(Mirror)_1.stl" name="hip_pitch_bracket(Mirror)_1+bracket_(2)(Mirror)_1_mesh"/>
-    <mesh file="meshes/knee_bracket(Mirror)_1+servo_(2)_(1)(Mirror)_1.stl" name="knee_bracket(Mirror)_1+servo_(2)_(1)(Mirror)_1_mesh"/>
-    <mesh file="meshes/knee_bracket(Mirror)_1+bracket_(2)_(1)(Mirror)_1.stl" name="knee_bracket(Mirror)_1+bracket_(2)_(1)(Mirror)_1_mesh"/>
-    <mesh file="meshes/ankle_bracket(Mirror)_1+servo_(2)_(2)(Mirror)_1.stl" name="ankle_bracket(Mirror)_1+servo_(2)_(2)(Mirror)_1_mesh"/>
-    <mesh file="meshes/ankle_bracket(Mirror)_1+bracket_(2)_(2)(Mirror)_1.stl" name="ankle_bracket(Mirror)_1+bracket_(2)_(2)(Mirror)_1_mesh"/>
-    <mesh file="meshes/hip_bracket_1+servo_(1)_1.stl" name="hip_bracket_1+servo_(1)_1_mesh"/>
-    <mesh file="meshes/hip_bracket_1+bracket_(1)_1.stl" name="hip_bracket_1+bracket_(1)_1_mesh"/>
+    <mesh file="meshes/rigth_angle_hip_1+servo_(3)_1.stl" name="rigth_angle_hip_1+servo_(3)_1_mesh"/>
+    <mesh file="meshes/rigth_angle_hip_1+bracket_(3)_1.stl" name="rigth_angle_hip_1+bracket_(3)_1_mesh"/>
     <mesh file="meshes/hip_pitch_bracket_1+servo_(2)_1.stl" name="hip_pitch_bracket_1+servo_(2)_1_mesh"/>
     <mesh file="meshes/hip_pitch_bracket_1+bracket_(2)_1.stl" name="hip_pitch_bracket_1+bracket_(2)_1_mesh"/>
     <mesh file="meshes/knee_bracket_1+servo_(2)_(1)_1.stl" name="knee_bracket_1+servo_(2)_(1)_1_mesh"/>
     <mesh file="meshes/knee_bracket_1+bracket_(2)_(1)_1.stl" name="knee_bracket_1+bracket_(2)_(1)_1_mesh"/>
     <mesh file="meshes/ankle_bracket_1+servo_(2)_(2)_1.stl" name="ankle_bracket_1+servo_(2)_(2)_1_mesh"/>
     <mesh file="meshes/ankle_bracket_1+bracket_(2)_(2)_1.stl" name="ankle_bracket_1+bracket_(2)_(2)_1_mesh"/>
+    <mesh file="meshes/rigth_angle_hip(Mirror)_1+servo_(3)(Mirror)_1.stl" name="rigth_angle_hip(Mirror)_1+servo_(3)(Mirror)_1_mesh"/>
+    <mesh file="meshes/rigth_angle_hip(Mirror)_1+bracket_(3)(Mirror)_1.stl" name="rigth_angle_hip(Mirror)_1+bracket_(3)(Mirror)_1_mesh"/>
+    <mesh file="meshes/hip_pitch_bracket(Mirror)_1+servo_(2)(Mirror)_1.stl" name="hip_pitch_bracket(Mirror)_1+servo_(2)(Mirror)_1_mesh"/>
+    <mesh file="meshes/hip_pitch_bracket(Mirror)_1+bracket_(2)(Mirror)_1.stl" name="hip_pitch_bracket(Mirror)_1+bracket_(2)(Mirror)_1_mesh"/>
+    <mesh file="meshes/knee_bracket(Mirror)_1+servo_(2)_(1)(Mirror)_1.stl" name="knee_bracket(Mirror)_1+servo_(2)_(1)(Mirror)_1_mesh"/>
+    <mesh file="meshes/knee_bracket(Mirror)_1+bracket_(2)_(1)(Mirror)_1.stl" name="knee_bracket(Mirror)_1+bracket_(2)_(1)(Mirror)_1_mesh"/>
+    <mesh file="meshes/ankle_bracket(Mirror)_1+servo_(2)_(2)(Mirror)_1.stl" name="ankle_bracket(Mirror)_1+servo_(2)_(2)(Mirror)_1_mesh"/>
+    <mesh file="meshes/ankle_bracket(Mirror)_1+bracket_(2)_(2)(Mirror)_1.stl" name="ankle_bracket(Mirror)_1+bracket_(2)_(2)(Mirror)_1_mesh"/>
   </asset>
   <actuator>
-    <position name="hip_bracket(Mirror)_1+bracket_(1)(Mirror)_1Revolute_1" joint="hip_bracket(Mirror)_1+bracket_(1)(Mirror)_1Revolute_1"/>
-    <position name="hip_pitch_bracket(Mirror)_1+bracket_(2)(Mirror)_1Revolute_1" joint="hip_pitch_bracket(Mirror)_1+bracket_(2)(Mirror)_1Revolute_1"/>
-    <position name="knee_bracket(Mirror)_1+bracket_(2)_(1)(Mirror)_1Revolute_1" joint="knee_bracket(Mirror)_1+bracket_(2)_(1)(Mirror)_1Revolute_1"/>
-    <position name="ankle_bracket(Mirror)_1+bracket_(2)_(2)(Mirror)_1Revolute_1" joint="ankle_bracket(Mirror)_1+bracket_(2)_(2)(Mirror)_1Revolute_1"/>
-    <position name="hip_bracket_1+bracket_(1)_1Revolute_1" joint="hip_bracket_1+bracket_(1)_1Revolute_1"/>
+    <position name="rigth_angle_hip_1+bracket_(3)_1Revolute_1" joint="rigth_angle_hip_1+bracket_(3)_1Revolute_1"/>
     <position name="hip_pitch_bracket_1+bracket_(2)_1Revolute_1" joint="hip_pitch_bracket_1+bracket_(2)_1Revolute_1"/>
     <position name="knee_bracket_1+bracket_(2)_(1)_1Revolute_1" joint="knee_bracket_1+bracket_(2)_(1)_1Revolute_1"/>
     <position name="ankle_bracket_1+bracket_(2)_(2)_1Revolute_1" joint="ankle_bracket_1+bracket_(2)_(2)_1Revolute_1"/>
+    <position name="rigth_angle_hip(Mirror)_1+bracket_(3)(Mirror)_1Revolute_1" joint="rigth_angle_hip(Mirror)_1+bracket_(3)(Mirror)_1Revolute_1"/>
+    <position name="hip_pitch_bracket(Mirror)_1+bracket_(2)(Mirror)_1Revolute_1" joint="hip_pitch_bracket(Mirror)_1+bracket_(2)(Mirror)_1Revolute_1"/>
+    <position name="knee_bracket(Mirror)_1+bracket_(2)_(1)(Mirror)_1Revolute_1" joint="knee_bracket(Mirror)_1+bracket_(2)_(1)(Mirror)_1Revolute_1"/>
+    <position name="ankle_bracket(Mirror)_1+bracket_(2)_(2)(Mirror)_1Revolute_1" joint="ankle_bracket(Mirror)_1+bracket_(2)_(2)(Mirror)_1Revolute_1"/>
   </actuator>
   <worldbody>
     <geom name="floor" size="0 0 .05" type="plane" condim="3" rgba="0.9 0.9 0.9 1" contype="1" conaffinity="1"/>
@@ -42,28 +42,28 @@
     <body name="body">
       <site name="imu" pos="-0.055 0 0" size="0.003" type="sphere" rgba="0 1 0 1"/>
       <freejoint name="root"/>
-      <geom mass="0.060" type="mesh" mesh="body_1_mesh"/>
-      <body name="hip_bracket(Mirror)_1+servo_(1)(Mirror)_1">
-        <geom mass="0.0134" type="mesh" mesh="hip_bracket(Mirror)_1+servo_(1)(Mirror)_1_mesh"/>
-        <body name="hip_bracket(Mirror)_1+bracket_(1)(Mirror)_1">
-          <joint axis="0 1 0" name="hip_bracket(Mirror)_1+bracket_(1)(Mirror)_1Revolute_1" type="hinge" pos="-0.0260 0.0205 -0.0060"/>
-          <geom density="186" type="mesh" mesh="hip_bracket(Mirror)_1+bracket_(1)(Mirror)_1_mesh"/>
-          <body name="hip_pitch_bracket(Mirror)_1+servo_(2)(Mirror)_1">
-            <geom mass="0.0134" type="mesh" mesh="hip_pitch_bracket(Mirror)_1+servo_(2)(Mirror)_1_mesh"/>
-            <body name="hip_pitch_bracket(Mirror)_1+bracket_(2)(Mirror)_1">
-              <joint axis="1 0 0" name="hip_pitch_bracket(Mirror)_1+bracket_(2)(Mirror)_1Revolute_1" type="hinge" pos="-0.0130 0.0039 -0.0340"/>
-              <geom density="186" type="mesh" mesh="hip_pitch_bracket(Mirror)_1+bracket_(2)(Mirror)_1_mesh"/>
-              <body name="knee_bracket(Mirror)_1+servo_(2)_(1)(Mirror)_1">
-                <geom mass="0.0134" type="mesh" mesh="knee_bracket(Mirror)_1+servo_(2)_(1)(Mirror)_1_mesh"/>
-                <body name="knee_bracket(Mirror)_1+bracket_(2)_(1)(Mirror)_1">
-                  <joint axis="1 0 0" name="knee_bracket(Mirror)_1+bracket_(2)_(1)(Mirror)_1Revolute_1" type="hinge" pos="-0.0130 0.0039 -0.0620"/>
-                  <geom density="186" type="mesh" mesh="knee_bracket(Mirror)_1+bracket_(2)_(1)(Mirror)_1_mesh"/>
-                  <body name="ankle_bracket(Mirror)_1+servo_(2)_(2)(Mirror)_1">
-                    <geom mass="0.0134" type="mesh" mesh="ankle_bracket(Mirror)_1+servo_(2)_(2)(Mirror)_1_mesh"/>
-                    <body name="ankle_bracket(Mirror)_1+bracket_(2)_(2)(Mirror)_1">
-                      <joint axis="1 0 0" name="ankle_bracket(Mirror)_1+bracket_(2)_(2)(Mirror)_1Revolute_1" type="hinge" pos="-0.0130 0.0039 -0.0900"/>
-                      <geom name="right_foot_collision" density="186" type="mesh" mesh="ankle_bracket(Mirror)_1+bracket_(2)_(2)(Mirror)_1_mesh" contype="1" conaffinity="1"/>
-                      <site name="right_foot_center" pos="-0.09025 -0.001075 -0.13855" size="0.003" type="sphere" rgba="1 0 0 1"/>
+      <geom density="186" type="mesh" mesh="body_1_mesh"/>
+      <body name="rigth_angle_hip_1+servo_(3)_1">
+        <geom density="186" type="mesh" mesh="rigth_angle_hip_1+servo_(3)_1_mesh"/>
+        <body name="rigth_angle_hip_1+bracket_(3)_1">
+          <joint axis="0 1 0" name="rigth_angle_hip_1+bracket_(3)_1Revolute_1" type="hinge" pos="-0.0195 0.0480 -0.0270"/>
+          <geom density="186" type="mesh" mesh="rigth_angle_hip_1+bracket_(3)_1_mesh"/>
+          <body name="hip_pitch_bracket_1+servo_(2)_1">
+            <geom density="186" type="mesh" mesh="hip_pitch_bracket_1+servo_(2)_1_mesh"/>
+            <body name="hip_pitch_bracket_1+bracket_(2)_1">
+              <joint axis="-1 0 0" name="hip_pitch_bracket_1+bracket_(2)_1Revolute_1" type="hinge" pos="0.0025 0.0314 -0.0380"/>
+              <geom density="186" type="mesh" mesh="hip_pitch_bracket_1+bracket_(2)_1_mesh"/>
+              <body name="knee_bracket_1+servo_(2)_(1)_1">
+                <geom density="186" type="mesh" mesh="knee_bracket_1+servo_(2)_(1)_1_mesh"/>
+                <body name="knee_bracket_1+bracket_(2)_(1)_1">
+                  <joint axis="-1 0 0" name="knee_bracket_1+bracket_(2)_(1)_1Revolute_1" type="hinge" pos="0.0025 0.0314 -0.0660"/>
+                  <geom density="186" type="mesh" mesh="knee_bracket_1+bracket_(2)_(1)_1_mesh"/>
+                  <body name="ankle_bracket_1+servo_(2)_(2)_1">
+                    <geom density="186" type="mesh" mesh="ankle_bracket_1+servo_(2)_(2)_1_mesh"/>
+                    <body name="ankle_bracket_1+bracket_(2)_(2)_1">
+                      <joint axis="-1 0 0" name="ankle_bracket_1+bracket_(2)_(2)_1Revolute_1" type="hinge" pos="0.0025 0.0314 -0.0940"/>
+                      <geom  name="left_foot_collision" density="186" type="mesh" mesh="ankle_bracket_1+bracket_(2)_(2)_1_mesh" contype="1" conaffinity="1"/>
+                      <site name="left_foot_center" pos="0.02135 0.026425 -0.126" size="0.003" type="sphere" rgba="1 0 0 1"/>
                     </body>
                   </body>
                 </body>
@@ -72,27 +72,27 @@
           </body>
         </body>
       </body>
-      <body name="hip_bracket_1+servo_(1)_1">
-        <geom mass="0.0134" type="mesh" mesh="hip_bracket_1+servo_(1)_1_mesh"/>
-        <body name="hip_bracket_1+bracket_(1)_1">
-          <joint axis="0 1 0" name="hip_bracket_1+bracket_(1)_1Revolute_1" type="hinge" pos="0.0462 0.0205 -0.0060"/>
-          <geom density="186" type="mesh" mesh="hip_bracket_1+bracket_(1)_1_mesh"/>
-          <body name="hip_pitch_bracket_1+servo_(2)_1">
-            <geom mass="0.0134" type="mesh" mesh="hip_pitch_bracket_1+servo_(2)_1_mesh"/>
-            <body name="hip_pitch_bracket_1+bracket_(2)_1">
-              <joint axis="-1 0 0" name="hip_pitch_bracket_1+bracket_(2)_1Revolute_1" type="hinge" pos="0.0332 0.0039 -0.0340"/>
-              <geom density="186" type="mesh" mesh="hip_pitch_bracket_1+bracket_(2)_1_mesh"/>
-              <body name="knee_bracket_1+servo_(2)_(1)_1">
-                <geom mass="0.0134" type="mesh" mesh="knee_bracket_1+servo_(2)_(1)_1_mesh"/>
-                <body name="knee_bracket_1+bracket_(2)_(1)_1">
-                  <joint axis="-1 0 0" name="knee_bracket_1+bracket_(2)_(1)_1Revolute_1" type="hinge" pos="0.0332 0.0039 -0.0620"/>
-                  <geom density="186" type="mesh" mesh="knee_bracket_1+bracket_(2)_(1)_1_mesh"/>
-                  <body name="ankle_bracket_1+servo_(2)_(2)_1">
-                    <geom mass="0.0134" type="mesh" mesh="ankle_bracket_1+servo_(2)_(2)_1_mesh"/>
-                    <body name="ankle_bracket_1+bracket_(2)_(2)_1">
-                      <joint axis="-1 0 0" name="ankle_bracket_1+bracket_(2)_(2)_1Revolute_1" type="hinge" pos="0.0332 0.0039 -0.0900"/>
-                      <geom name="left_foot_collision" density="186" type="mesh" mesh="ankle_bracket_1+bracket_(2)_(2)_1_mesh" contype="1" conaffinity="1"/>
-                      <site name="left_foot_center" pos="-0.01665 -0.001075 -0.13855" size="0.003" type="sphere" rgba="1 0 0 1"/>
+      <body name="rigth_angle_hip(Mirror)_1+servo_(3)(Mirror)_1">
+        <geom density="186" type="mesh" mesh="rigth_angle_hip(Mirror)_1+servo_(3)(Mirror)_1_mesh"/>
+        <body name="rigth_angle_hip(Mirror)_1+bracket_(3)(Mirror)_1">
+          <joint axis="0 1 0" name="rigth_angle_hip(Mirror)_1+bracket_(3)(Mirror)_1Revolute_1" type="hinge" pos="-0.0815 0.0480 -0.0270"/>
+          <geom density="186" type="mesh" mesh="rigth_angle_hip(Mirror)_1+bracket_(3)(Mirror)_1_mesh"/>
+          <body name="hip_pitch_bracket(Mirror)_1+servo_(2)(Mirror)_1">
+            <geom density="186" type="mesh" mesh="hip_pitch_bracket(Mirror)_1+servo_(2)(Mirror)_1_mesh"/>
+            <body name="hip_pitch_bracket(Mirror)_1+bracket_(2)(Mirror)_1">
+              <joint axis="1 0 0" name="hip_pitch_bracket(Mirror)_1+bracket_(2)(Mirror)_1Revolute_1" type="hinge" pos="-0.1035 0.0314 -0.0392"/>
+              <geom density="186" type="mesh" mesh="hip_pitch_bracket(Mirror)_1+bracket_(2)(Mirror)_1_mesh"/>
+              <body name="knee_bracket(Mirror)_1+servo_(2)_(1)(Mirror)_1">
+                <geom density="186" type="mesh" mesh="knee_bracket(Mirror)_1+servo_(2)_(1)(Mirror)_1_mesh"/>
+                <body name="knee_bracket(Mirror)_1+bracket_(2)_(1)(Mirror)_1">
+                  <joint axis="1 0 0" name="knee_bracket(Mirror)_1+bracket_(2)_(1)(Mirror)_1Revolute_1" type="hinge" pos="-0.1035 0.0314 -0.0672"/>
+                  <geom density="186" type="mesh" mesh="knee_bracket(Mirror)_1+bracket_(2)_(1)(Mirror)_1_mesh"/>
+                  <body name="ankle_bracket(Mirror)_1+servo_(2)_(2)(Mirror)_1">
+                    <geom density="186" type="mesh" mesh="ankle_bracket(Mirror)_1+servo_(2)_(2)(Mirror)_1_mesh"/>
+                    <body name="ankle_bracket(Mirror)_1+bracket_(2)_(2)(Mirror)_1">
+                      <joint axis="1 0 0" name="ankle_bracket(Mirror)_1+bracket_(2)_(2)(Mirror)_1Revolute_1" type="hinge" pos="-0.1035 0.0314 -0.0952"/>
+                      <geom name="right_foot_collision"  density="186" type="mesh" mesh="ankle_bracket(Mirror)_1+bracket_(2)_(2)(Mirror)_1_mesh" contype="1" conaffinity="1"/>
+                      <site name="right_foot_center" pos="-0.12225 0.026425 -0.1272" size="0.003" type="sphere" rgba="1 0 0 1"/>
                     </body>
                   </body>
                 </body>
@@ -115,9 +115,8 @@
   <keyframe>
     <key
   name='basic'
-  qpos="0.000389242 0.00107671 0.136092 0.999998 6.97123e-05 -0.00118288 0.00177158 0.00541094 -0.290574 0.580919 -0.290568 0.00216401 0.290218 -0.580284 0.290194"
+  qpos="0.00123775 0.000938227 0.123818 0.999987 0.000677579 0.00457832 0.00197716 -0.0025116 -0.289598 0.580634 -0.289686 0.000959435 0.289702 -0.580925 0.289789"
   ctrl="0 -0.29 0.58 -0.29 0 0.29 -0.58 0.29"
 />
   </keyframe>
-
 </mujoco>
