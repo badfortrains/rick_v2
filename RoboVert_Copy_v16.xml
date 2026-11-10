@@ -75,22 +75,22 @@
       <body name="rigth_angle_hip_1+servo_(3)_1">
         <geom mass="0.0134" type="mesh" mesh="rigth_angle_hip_1+servo_(3)_1_mesh"/>
         <body name="rigth_angle_hip_1+bracket_(3)_1">
-          <joint axis="0 1 0" name="rigth_angle_hip_1+bracket_(3)_1Revolute_1" type="hinge" pos="0.0580 0.0674 0.0191"/>
+          <joint axis="0 1 0" name="rigth_angle_hip_1+bracket_(3)_1Revolute_1" type="hinge" pos="0.0580 0.0674 0.0191" range="-0.48 1.5"/>
           <geom density="186" type="mesh" mesh="rigth_angle_hip_1+bracket_(3)_1_mesh"/>
           <body name="hip_pitch_bracket_1+servo_(2)_1">
             <geom mass="0.0134" type="mesh" mesh="hip_pitch_bracket_1+servo_(2)_1_mesh"/>
             <body name="hip_pitch_bracket_1+bracket_(2)_1">
-              <joint axis="-1 0 0" name="hip_pitch_bracket_1+bracket_(2)_1Revolute_1" type="hinge" pos="0.0800 0.0509 0.0081"/>
+              <joint axis="-1 0 0" name="hip_pitch_bracket_1+bracket_(2)_1Revolute_1" type="hinge" pos="0.0800 0.0509 0.0081" range="-0.48 1.5"/>
               <geom density="186" type="mesh" mesh="hip_pitch_bracket_1+bracket_(2)_1_mesh"/>
               <body name="knee_bracket_1+servo_(2)_(1)_1">
                 <geom mass="0.0134" type="mesh" mesh="knee_bracket_1+servo_(2)_(1)_1_mesh"/>
                 <body name="knee_bracket_1+bracket_(2)_(1)_1">
-                  <joint axis="-1 0 0" name="knee_bracket_1+bracket_(2)_(1)_1Revolute_1" type="hinge" pos="0.0800 0.0509 -0.0199"/>
+                  <joint axis="-1 0 0" name="knee_bracket_1+bracket_(2)_(1)_1Revolute_1" type="hinge" pos="0.0800 0.0509 -0.0199" range="-0.48 1.5"/>
                   <geom density="186" type="mesh" mesh="knee_bracket_1+bracket_(2)_(1)_1_mesh"/>
                   <body name="ankle_bracket_1+servo_(2)_(2)_1">
                     <geom mass="0.0134" type="mesh" mesh="ankle_bracket_1+servo_(2)_(2)_1_mesh"/>
                     <body name="ankle_bracket_1+bracket_(2)_(2)_1">
-                      <joint axis="-1 0 0" name="ankle_bracket_1+bracket_(2)_(2)_1Revolute_1" type="hinge" pos="0.0800 0.0509 -0.0479"/>
+                      <joint axis="-1 0 0" name="ankle_bracket_1+bracket_(2)_(2)_1Revolute_1" type="hinge" pos="0.0800 0.0509 -0.0479" range="-0.48 1.5"/>
                       <geom name="left_foot_collision" density="186" type="mesh" mesh="ankle_bracket_1+bracket_(2)_(2)_1_mesh" contype="1" conaffinity="1"/>
                       <site name="left_foot_center" pos="0.0987981 0.0458714 -0.0799" size="0.003" type="sphere" rgba="1 0 0 1"/>
                     </body>
@@ -115,8 +115,8 @@
   <keyframe>
     <key
       name="basic"
-      qpos="-0.0703506 -0.0169689 0.0821483 0.999659 -0.0254319 0.00193859 -0.00565513 0.00063679 0.297958 -0.572916 0.298788 -0.00318714 -0.281719 0.489212 -0.282249"
-      ctrl="0 0.29 -0.58 0.29 0 -0.29 0.58 -0.29"
+      qpos="-0.0701094 -0.0212377 0.0802344 0.999968 7.06887e-05 0.0046197 -0.00658169 0.0011748 -0.125277 0.250422 -0.12512 -0.00498984 0.12523 -0.250124 0.125072"
+      ctrl="0 -0.125 0.25 -0.125 0 0.125 -0.25 0.125"
     />
   </keyframe>
 </mujoco>
