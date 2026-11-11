@@ -40,7 +40,7 @@
     <geom name="floor" size="0 0 .05" type="plane" condim="3" rgba="0.9 0.9 0.9 1" contype="1" conaffinity="1"/>
     <light mode="targetbodycom" target="body" diffuse=".8 .8 .8" specular="0.3 0.3 0.3" pos="0 -6 4" cutoff="30"/>
     <body name="body">
-      <site name="imu" pos="0.0149481 0.0194464 0.0461" size="0.003" type="sphere" rgba="0 1 0 1"/>
+      <site name="imu" pos="0.0124981 0.0569464 0.0385" size="0.003" type="sphere" rgba="0 1 0 1"/>
       <freejoint name="root"/>
       <geom mass="0.055" type="mesh" mesh="body2_1_mesh"/>
       <body name="rigth_angle_hip(Mirror)_1+servo_(3)(Mirror)_1">
