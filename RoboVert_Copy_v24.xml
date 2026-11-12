@@ -79,7 +79,7 @@
         <body name="rigth_angle_hip_1+bracket_(3)_1">
           <joint axis="0 1 0" name="rigth_angle_hip_1+bracket_(3)_1Revolute_1" type="hinge" pos="0.0430 0.0674 0.0191" range="-0.75 1.5"/>
           <geom mass="0.0058" type="mesh" mesh="rigth_angle_hip_1+bracket_(3)_1_mesh"/>
-          <body name="hip_pitch_bracket_1+servo_(2)_1">
+          <body name="hip_pitch_bracket_1+servo_(2)_1" pos="0 0 -0.0012">
             <geom mass="0.0134" type="mesh" mesh="hip_pitch_bracket_1+servo_(2)_1_mesh"/>
             <body name="hip_pitch_bracket_1+bracket_(2)_1">
               <joint axis="-1 0 0" name="hip_pitch_bracket_1+bracket_(2)_1Revolute_1" type="hinge" pos="0.0750 0.0509 0.0081" range="-0.75 1.5"/>
