@@ -115,7 +115,7 @@
       </body>
       <body name="imu_1">
         <geom density="186" type="mesh" mesh="imu_1_mesh"/>
-        <site name="imu" pos="-0.0045019 0.0569464 0.0385" size="0.003" type="sphere" rgba="0 1 0 1"/>
+        <site name="imu" pos="-0.000501898 0.0569464 0.0385" size="0.003" type="sphere" rgba="0 1 0 1"/>
       </body>
       <body name="pcb_1">
         <geom mass="0.0184" type="mesh" mesh="pcb_1_mesh"/>
