@@ -65,11 +65,11 @@
                     <body name="ankle_bracket(Mirror)_1+bracket_(2)_(2)(Mirror)_1">
                       <joint axis="1 0 0" name="ankle_bracket(Mirror)_1+bracket_(2)_(2)(Mirror)_1Revolute_1" type="hinge" pos="-0.0410 0.0509 -0.0659"/>
                       <geom mass="0.03152" type="mesh" mesh="ankle_bracket(Mirror)_1+bracket_(2)_(2)(Mirror)_1_mesh" contype="0" conaffinity="0" solref="0.03 1" priority="1"/>
-                      <!-- 5 mm radius corner spheres inset 2.5 mm in X and Y for the foot chamfer; sole height unchanged. -->
-                      <geom name="right_foot_collision_1" type="sphere" pos="-0.0651019 0.0083714 -0.0929" size="0.005" contype="1" conaffinity="1" rgba="1 0 0 1" density="0"/>
-                      <geom name="right_foot_collision_2" type="sphere" pos="-0.0395019 0.0083714 -0.0929" size="0.005" contype="1" conaffinity="1" rgba="1 0 0 1" density="0"/>
-                      <geom name="right_foot_collision_3" type="sphere" pos="-0.0651019 0.0833714 -0.0929" size="0.005" contype="1" conaffinity="1" rgba="1 0 0 1" density="0"/>
-                      <geom name="right_foot_collision_4" type="sphere" pos="-0.0395019 0.0833714 -0.0929" size="0.005" contype="1" conaffinity="1" rgba="1 0 0 1" density="0"/>
+                      <!-- 5 mm radius corner spheres; front/rear centers are inside the flat sole patch. -->
+                      <geom name="right_foot_collision_1" type="sphere" pos="-0.0651019 0.0158714 -0.0929" size="0.005" contype="1" conaffinity="1" rgba="1 0 0 1" density="0"/>
+                      <geom name="right_foot_collision_2" type="sphere" pos="-0.0395019 0.0158714 -0.0929" size="0.005" contype="1" conaffinity="1" rgba="1 0 0 1" density="0"/>
+                      <geom name="right_foot_collision_3" type="sphere" pos="-0.0651019 0.0758714 -0.0929" size="0.005" contype="1" conaffinity="1" rgba="1 0 0 1" density="0"/>
+                      <geom name="right_foot_collision_4" type="sphere" pos="-0.0395019 0.0758714 -0.0929" size="0.005" contype="1" conaffinity="1" rgba="1 0 0 1" density="0"/>
                       <site name="right_foot_center" pos="-0.0523019 0.0458714 -0.0979" size="0.003" type="sphere" rgba="1 0 0 1"/>
                     </body>
                   </body>
@@ -99,11 +99,11 @@
                     <body name="ankle_bracket_1+bracket_(2)_(2)_1">
                       <joint axis="-1 0 0" name="ankle_bracket_1+bracket_(2)_(2)_1Revolute_1" type="hinge" pos="0.0650 0.0509 -0.0659" range="-0.75 1.5"/>
                       <geom mass="0.03152" type="mesh" mesh="ankle_bracket_1+bracket_(2)_(2)_1_mesh" contype="0" conaffinity="0" solref="0.03 1" priority="1"/>
-                      <!-- 5 mm radius corner spheres inset 2.5 mm in X and Y for the foot chamfer; sole height unchanged. -->
-                      <geom name="left_foot_collision_1" type="sphere" pos="0.0634981 0.0083714 -0.0929" size="0.005" contype="1" conaffinity="1" rgba="1 0 0 1" density="0"/>
-                      <geom name="left_foot_collision_2" type="sphere" pos="0.0890981 0.0083714 -0.0929" size="0.005" contype="1" conaffinity="1" rgba="1 0 0 1" density="0"/>
-                      <geom name="left_foot_collision_3" type="sphere" pos="0.0634981 0.0833714 -0.0929" size="0.005" contype="1" conaffinity="1" rgba="1 0 0 1" density="0"/>
-                      <geom name="left_foot_collision_4" type="sphere" pos="0.0890981 0.0833714 -0.0929" size="0.005" contype="1" conaffinity="1" rgba="1 0 0 1" density="0"/>
+                      <!-- 5 mm radius corner spheres; front/rear centers are inside the flat sole patch. -->
+                      <geom name="left_foot_collision_1" type="sphere" pos="0.0634981 0.0158714 -0.0929" size="0.005" contype="1" conaffinity="1" rgba="1 0 0 1" density="0"/>
+                      <geom name="left_foot_collision_2" type="sphere" pos="0.0890981 0.0158714 -0.0929" size="0.005" contype="1" conaffinity="1" rgba="1 0 0 1" density="0"/>
+                      <geom name="left_foot_collision_3" type="sphere" pos="0.0634981 0.0758714 -0.0929" size="0.005" contype="1" conaffinity="1" rgba="1 0 0 1" density="0"/>
+                      <geom name="left_foot_collision_4" type="sphere" pos="0.0890981 0.0758714 -0.0929" size="0.005" contype="1" conaffinity="1" rgba="1 0 0 1" density="0"/>
                       <site name="left_foot_center" pos="0.0762981 0.0458714 -0.0979" size="0.003" type="sphere" rgba="1 0 0 1"/>
                     </body>
                   </body>
