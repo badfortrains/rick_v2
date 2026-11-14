@@ -64,8 +64,13 @@
                     <geom mass="0.0134" type="mesh" mesh="ankle_bracket(Mirror)_1+servo_(2)_(2)(Mirror)_1_mesh"/>
                     <body name="ankle_bracket(Mirror)_1+bracket_(2)_(2)(Mirror)_1">
                       <joint axis="1 0 0" name="ankle_bracket(Mirror)_1+bracket_(2)_(2)(Mirror)_1Revolute_1" type="hinge" pos="-0.0410 0.0509 -0.0591"/>
-                      <geom name="right_foot_collision" mass="0.03152" type="mesh" mesh="ankle_bracket(Mirror)_1+bracket_(2)_(2)(Mirror)_1_mesh" contype="1" conaffinity="1"/>
-                      <site name="right_foot_center" pos="-0.0598019 0.0458714 -0.0911" size="0.003" type="sphere" rgba="1 0 0 1"/>
+                      <geom mass="0.03152" type="mesh" mesh="ankle_bracket(Mirror)_1+bracket_(2)_(2)(Mirror)_1_mesh" contype="0" conaffinity="0" solref="0.03 1" priority="1"/>
+                      <!-- 5 mm radius corner spheres inset 2.5 mm in X and Y for the foot chamfer; sole height unchanged. -->
+                      <geom name="right_foot_collision_1" type="sphere" pos="-0.0651019 0.0083714 -0.0929" size="0.005" contype="1" conaffinity="1" rgba="1 0 0 1" density="0"/>
+                      <geom name="right_foot_collision_2" type="sphere" pos="-0.0395019 0.0083714 -0.0929" size="0.005" contype="1" conaffinity="1" rgba="1 0 0 1" density="0"/>
+                      <geom name="right_foot_collision_3" type="sphere" pos="-0.0651019 0.0833714 -0.0929" size="0.005" contype="1" conaffinity="1" rgba="1 0 0 1" density="0"/>
+                      <geom name="right_foot_collision_4" type="sphere" pos="-0.0395019 0.0833714 -0.0929" size="0.005" contype="1" conaffinity="1" rgba="1 0 0 1" density="0"/>
+                      <site name="right_foot_center" pos="-0.0523019 0.0458714 -0.0979" size="0.003" type="sphere" rgba="1 0 0 1"/>
                     </body>
                   </body>
                 </body>
@@ -93,8 +98,13 @@
                     <geom mass="0.0134" type="mesh" mesh="ankle_bracket_1+servo_(2)_(2)_1_mesh"/>
                     <body name="ankle_bracket_1+bracket_(2)_(2)_1">
                       <joint axis="-1 0 0" name="ankle_bracket_1+bracket_(2)_(2)_1Revolute_1" type="hinge" pos="0.0750 0.0509 -0.0579" range="-0.75 1.5"/>
-                      <geom name="left_foot_collision" mass="0.03152" type="mesh" mesh="ankle_bracket_1+bracket_(2)_(2)_1_mesh" contype="1" conaffinity="1"/>
-                      <site name="left_foot_center" pos="0.0837981 0.0458714 -0.0899" size="0.003" type="sphere" rgba="1 0 0 1"/>
+                      <geom mass="0.03152" type="mesh" mesh="ankle_bracket_1+bracket_(2)_(2)_1_mesh" contype="0" conaffinity="0" solref="0.03 1" priority="1"/>
+                      <!-- 5 mm radius corner spheres inset 2.5 mm in X and Y for the foot chamfer; sole height unchanged. -->
+                      <geom name="left_foot_collision_1" type="sphere" pos="0.0634981 0.0083714 -0.0929" size="0.005" contype="1" conaffinity="1" rgba="1 0 0 1" density="0"/>
+                      <geom name="left_foot_collision_2" type="sphere" pos="0.0890981 0.0083714 -0.0929" size="0.005" contype="1" conaffinity="1" rgba="1 0 0 1" density="0"/>
+                      <geom name="left_foot_collision_3" type="sphere" pos="0.0634981 0.0833714 -0.0929" size="0.005" contype="1" conaffinity="1" rgba="1 0 0 1" density="0"/>
+                      <geom name="left_foot_collision_4" type="sphere" pos="0.0890981 0.0833714 -0.0929" size="0.005" contype="1" conaffinity="1" rgba="1 0 0 1" density="0"/>
+                      <site name="left_foot_center" pos="0.0762981 0.0458714 -0.0979" size="0.003" type="sphere" rgba="1 0 0 1"/>
                     </body>
                   </body>
                 </body>
@@ -117,17 +127,23 @@
     <camera name="track" mode="trackcom" pos="0 -2.1 0.5" xyaxes="1 0 0 0 0.2 1" target="body"/>
   </worldbody>
   <contact>
-    <pair name="left_foot_floor" geom1="left_foot_collision" geom2="floor" condim="3" friction="0.35 0.35"/>
-    <pair name="right_foot_floor" geom1="right_foot_collision" geom2="floor" condim="3" friction="0.35 0.35"/>
+    <pair name="left_foot_floor_1" geom1="left_foot_collision_1" geom2="floor" condim="3" friction="0.35 0.35"/>
+    <pair name="left_foot_floor_2" geom1="left_foot_collision_2" geom2="floor" condim="3" friction="0.35 0.35"/>
+    <pair name="left_foot_floor_3" geom1="left_foot_collision_3" geom2="floor" condim="3" friction="0.35 0.35"/>
+    <pair name="left_foot_floor_4" geom1="left_foot_collision_4" geom2="floor" condim="3" friction="0.35 0.35"/>
+    <pair name="right_foot_floor_1" geom1="right_foot_collision_1" geom2="floor" condim="3" friction="0.35 0.35"/>
+    <pair name="right_foot_floor_2" geom1="right_foot_collision_2" geom2="floor" condim="3" friction="0.35 0.35"/>
+    <pair name="right_foot_floor_3" geom1="right_foot_collision_3" geom2="floor" condim="3" friction="0.35 0.35"/>
+    <pair name="right_foot_floor_4" geom1="right_foot_collision_4" geom2="floor" condim="3" friction="0.35 0.35"/>
   </contact>
   <sensor>
-    <contact name="left_foot_floor_found" geom1="left_foot_collision" geom2="floor" reduce="mindist" num="1" data="found"/>
-    <contact name="right_foot_floor_found" geom1="right_foot_collision" geom2="floor" reduce="mindist" num="1" data="found"/>
+    <contact name="left_foot_floor_found" body1="ankle_bracket_1+bracket_(2)_(2)_1" geom2="floor" reduce="mindist" num="1" data="found"/>
+    <contact name="right_foot_floor_found" body1="ankle_bracket(Mirror)_1+bracket_(2)_(2)(Mirror)_1" geom2="floor" reduce="mindist" num="1" data="found"/>
   </sensor>
   <keyframe>
   <key
       name="basic"
-  qpos="-0.0707736 -0.0231966 0.0892321 0.999958 0.000305704 0.00543094 -0.00741867 0.00233251 -0.200853 0.400932 -0.200805 -0.00715902 0.200474 -0.400247 0.200425"
-      ctrl="0 -0.20 0.40 -0.20 0 0.20 -0.40 0.20" />
+  qpos="-0.0720629027 -0.0231857258 0.0980290851 0.9999645 0.000269109341 -0.00402593637 -0.00739710953 -0.0224298375 -0.20067374 0.40061273 -0.200579135 0.0224320771 0.20065283 -0.400572066 0.200558035"
+      ctrl="-0.03 -0.20 0.40 -0.20 0.03 0.20 -0.40 0.20" />
   </keyframe>
 </mujoco>
