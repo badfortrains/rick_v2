@@ -66,12 +66,9 @@
                       <joint axis="1 0 0" name="ankle_bracket(Mirror)_1+bracket_(2)_(2)(Mirror)_1Revolute_1" type="hinge" pos="-0.0410 0.0509 -0.0659"/>
                       <geom mass="0.03152" type="mesh" mesh="ankle_bracket(Mirror)_1+bracket_(2)_(2)(Mirror)_1_mesh" contype="0" conaffinity="0" solref="0.03 1" priority="1" rgba="0.5 0.7 1.0 0.35"/>
                       <!-- 10 mm radius longitudinal capsules tangent to the measured flat sole patch. -->
-                      <geom name="right_foot_collision_1" type="capsule" fromto="-0.0584598 0.0150136 -0.0879 -0.0584598 0.0767293 -0.0879" size="0.01" contype="1" conaffinity="1" rgba="1 0 0 1" density="0"/>
-                      <geom name="right_foot_collision_2" type="capsule" fromto="-0.0461440 0.0150136 -0.0879 -0.0461440 0.0767293 -0.0879" size="0.01" contype="1" conaffinity="1" rgba="1 0 0 1" density="0"/>
-                      <!-- 10 mm radius upper toe-bumper spheres tangent to the mesh's -Y toe edge (4.142 mm above the flat sole). -->
-                      <geom name="right_foot_front_1" type="sphere" pos="-0.0584598 0.0108714 -0.083758" size="0.01" contype="1" conaffinity="1" rgba="1 0 0 1" density="0"/>
-                      <geom name="right_foot_front_2" type="sphere" pos="-0.0461440 0.0108714 -0.083758" size="0.01" contype="1" conaffinity="1" rgba="1 0 0 1" density="0"/>
-                      <site name="right_foot_center" pos="-0.0523019 0.0458714 -0.0979" size="0.003" type="sphere" rgba="1 0 0 1"/>
+                      <geom name="right_foot_collision_1" type="capsule" fromto="-0.0626019 0.0108714 -0.0839 -0.0626019 0.0808714 -0.0839" size="0.01" contype="1" conaffinity="1" rgba="1 0 0 1" density="0"/>
+                      <geom name="right_foot_collision_2" type="capsule" fromto="-0.0420019 0.0108714 -0.0839 -0.0420019 0.0808714 -0.0839" size="0.01" contype="1" conaffinity="1" rgba="1 0 0 1" density="0"/>
+                      <site name="right_foot_center" pos="-0.0523019 0.0458714 -0.0939" size="0.003" type="sphere" rgba="1 0 0 1"/>
                     </body>
                   </body>
                 </body>
@@ -101,12 +98,9 @@
                       <joint axis="-1 0 0" name="ankle_bracket_1+bracket_(2)_(2)_1Revolute_1" type="hinge" pos="0.0650 0.0509 -0.0659" range="-0.75 1.5"/>
                       <geom mass="0.03152" type="mesh" mesh="ankle_bracket_1+bracket_(2)_(2)_1_mesh" contype="0" conaffinity="0" solref="0.03 1" priority="1" rgba="0.5 0.7 1.0 0.35"/>
                       <!-- 10 mm radius longitudinal capsules tangent to the measured flat sole patch. -->
-                      <geom name="left_foot_collision_1" type="capsule" fromto="0.0701402 0.0150136 -0.0879 0.0701402 0.0767293 -0.0879" size="0.01" contype="1" conaffinity="1" rgba="1 0 0 1" density="0"/>
-                      <geom name="left_foot_collision_2" type="capsule" fromto="0.0824560 0.0150136 -0.0879 0.0824560 0.0767293 -0.0879" size="0.01" contype="1" conaffinity="1" rgba="1 0 0 1" density="0"/>
-                      <!-- 10 mm radius upper toe-bumper spheres tangent to the mesh's -Y toe edge (4.142 mm above the flat sole). -->
-                      <geom name="left_foot_front_1" type="sphere" pos="0.0701402 0.0108714 -0.083758" size="0.01" contype="1" conaffinity="1" rgba="1 0 0 1" density="0"/>
-                      <geom name="left_foot_front_2" type="sphere" pos="0.0824560 0.0108714 -0.083758" size="0.01" contype="1" conaffinity="1" rgba="1 0 0 1" density="0"/>
-                      <site name="left_foot_center" pos="0.0762981 0.0458714 -0.0979" size="0.003" type="sphere" rgba="1 0 0 1"/>
+                      <geom name="left_foot_collision_1" type="capsule" fromto="0.0659981 0.0108714 -0.0839 0.0659981 0.0808714 -0.0839" size="0.01" contype="1" conaffinity="1" rgba="1 0 0 1" density="0"/>
+                      <geom name="left_foot_collision_2" type="capsule" fromto="0.0865981 0.0108714 -0.0839 0.0865981 0.0808714 -0.0839" size="0.01" contype="1" conaffinity="1" rgba="1 0 0 1" density="0"/>
+                      <site name="left_foot_center" pos="0.0762981 0.0458714 -0.0939" size="0.003" type="sphere" rgba="1 0 0 1"/>
                     </body>
                   </body>
                 </body>
@@ -131,12 +125,8 @@
   <contact>
     <pair name="left_foot_floor_1" geom1="left_foot_collision_1" geom2="floor" condim="3" friction="0.35 0.35"/>
     <pair name="left_foot_floor_2" geom1="left_foot_collision_2" geom2="floor" condim="3" friction="0.35 0.35"/>
-    <pair name="left_foot_front_floor_1" geom1="left_foot_front_1" geom2="floor" condim="3" friction="0.35 0.35"/>
-    <pair name="left_foot_front_floor_2" geom1="left_foot_front_2" geom2="floor" condim="3" friction="0.35 0.35"/>
     <pair name="right_foot_floor_1" geom1="right_foot_collision_1" geom2="floor" condim="3" friction="0.35 0.35"/>
     <pair name="right_foot_floor_2" geom1="right_foot_collision_2" geom2="floor" condim="3" friction="0.35 0.35"/>
-    <pair name="right_foot_front_floor_1" geom1="right_foot_front_1" geom2="floor" condim="3" friction="0.35 0.35"/>
-    <pair name="right_foot_front_floor_2" geom1="right_foot_front_2" geom2="floor" condim="3" friction="0.35 0.35"/>
   </contact>
   <sensor>
     <contact name="left_foot_floor_found" body1="ankle_bracket_1+bracket_(2)_(2)_1" geom2="floor" reduce="mindist" num="1" data="found"/>
@@ -144,7 +134,7 @@
   </sensor>
   <keyframe>
     <key name="basic"
-         qpos="-0.0711335661 -0.0227914947 0.0957351029 0.999999892 0.000396329002 -2.09880574e-05 0.00024275528 -0.0223504735 -0.290667451 0.581082226 -0.291207987 0.0224852585 0.290660231 -0.581060629 0.291193552"
+         qpos="-0.0711335661 -0.0227914947 0.0918291029 0.999999892 0.000396329002 -2.09880574e-05 0.00024275528 -0.0223504735 -0.290667451 0.581082226 -0.291207987 0.0224852585 0.290660231 -0.581060629 0.291193552"
          ctrl="-0.03 -0.29 0.58 -0.29 0.03 0.29 -0.58 0.29"/>
   </keyframe>
 </mujoco>
